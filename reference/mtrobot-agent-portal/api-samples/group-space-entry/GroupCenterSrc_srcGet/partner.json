@@ -1,0 +1,203 @@
+{
+  "status": 1,
+  "data": {
+    "title": "婚姻玩法",
+    "notice": "设置婚姻玩法",
+    "comment": "",
+    "form": [
+      {
+        "type": "switch",
+        "label": "功能开关",
+        "name": "switch_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "约会开关",
+        "name": "yuehui_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "逼婚开关",
+        "name": "bihun_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "抢婚开关",
+        "name": "qianghun_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "洞房开关",
+        "name": "dongfang_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "宝宝开关",
+        "name": "child_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "宝宝打工开关",
+        "name": "childwork_checked",
+        "value": false
+      },
+      {
+        "type": "radio",
+        "label": "宝宝打工奖励",
+        "name": "child_work",
+        "value": 1,
+        "select": {
+          "1": "金币",
+          "2": "钻石"
+        }
+      },
+      {
+        "type": "number",
+        "label": "离婚证价格",
+        "name": "lihunzheng",
+        "placeholder": "设置使用离婚证价格",
+        "value": "1000",
+        "max": 10
+      },
+      {
+        "type": "slider",
+        "label": "逼婚成功率",
+        "name": "bh_odds",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "value": 20
+      },
+      {
+        "type": "slider",
+        "label": "逃婚成功率",
+        "name": "th_odds",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "value": 15
+      },
+      {
+        "type": "slider",
+        "label": "抢婚成功率",
+        "name": "qh_odds",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "value": 20
+      },
+      {
+        "type": "slider",
+        "label": "洞房成功率",
+        "name": "df_odds",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "value": 40
+      },
+      {
+        "type": "slider",
+        "label": "约会成功率",
+        "name": "yh_odds",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "value": 40
+      },
+      {
+        "type": "slider",
+        "label": "洞房成功怀孕概率",
+        "name": "hy_odds",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "value": 50
+      },
+      {
+        "type": "number",
+        "label": "约会消耗金币",
+        "name": "yh_jinbi",
+        "placeholder": "约会消耗金币",
+        "value": "1000",
+        "max": 10
+      },
+      {
+        "type": "number",
+        "label": "约会魅力值消耗",
+        "name": "yh_meili",
+        "placeholder": "约会魅力值消耗",
+        "value": 100,
+        "max": 10
+      },
+      {
+        "type": "number",
+        "label": "约会成功奖励恩爱值",
+        "name": "yh_int",
+        "placeholder": "约会成功奖励恩爱值",
+        "value": 100,
+        "max": 10
+      },
+      {
+        "type": "number",
+        "label": "求婚魅力要求数值",
+        "name": "qh_meili",
+        "placeholder": "求婚魅力要求数值",
+        "value": "334400",
+        "max": 10
+      },
+      {
+        "type": "number",
+        "label": "逃婚需要的金币数量",
+        "name": "th_jinbi",
+        "placeholder": "逃婚需要的金币数量",
+        "value": 1000,
+        "max": 10
+      },
+      {
+        "type": "number",
+        "label": "洞房消耗及奖励恩爱值",
+        "name": "df_int",
+        "placeholder": "洞房消耗及奖励恩爱值",
+        "value": 100,
+        "max": 10
+      },
+      {
+        "type": "switch",
+        "label": "祝福表情",
+        "name": "marry_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "祝福音乐",
+        "name": "music_checked",
+        "value": true
+      },
+      {
+        "type": "textarea",
+        "label": "结婚贺词",
+        "placeholder": "在这里输入内容",
+        "name": "content",
+        "rows": 5,
+        "value": "=====[@emoji=1f49d]进行拜堂礼[@emoji=1f49d]=====\n[@emoji=1f491]一拜天地\n[@emoji=1f491]二拜祖先\n[@emoji=1f491]三拜高堂\n[@emoji=1f491]夫妻交拜\n从今以后，两位在群里@对方聊天，都会收获恩爱指数峨！\n回复 洞房 可以进入洞房哦！",
+        "tag": []
+      },
+      {
+        "type": "textarea",
+        "label": "求婚贺词",
+        "placeholder": "在这里输入内容",
+        "name": "ask_content",
+        "rows": 5,
+        "value": "======[@emoji=1f49d]求婚贺词[@emoji=1f49d]======\n[@emoji=1f389]祝贺天下有情人终成眷属！[@emoji=1f389]",
+        "tag": []
+      }
+    ]
+  },
+  "message": "成功"
+}

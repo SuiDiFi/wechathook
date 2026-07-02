@@ -1,0 +1,1065 @@
+{
+  "meta": {
+    "capturedAt": "2026-06-26T02:19:57.206Z",
+    "urlHash": "2f99cf79887dbb19efacaa631959cfec",
+    "group_id": 141845,
+    "wxid": "57226609398@chatroom",
+    "product": "月卡",
+    "expires": "2026年07月26日 04时55分38秒",
+    "loginFlow": [
+      "1. GroupCenter/get { group_id: urlHash }",
+      "2. Login/loginGroup { id: group_info.id, password, code }",
+      "3. GroupCenterSrc/srcGet { op, group_id, token+uid headers }"
+    ]
+  },
+  "GroupCenter_get": {
+    "status": 1,
+    "data": {
+      "group_info": {
+        "id": 141845,
+        "nickname": "",
+        "wxid": "57226609398@chatroom",
+        "headimgurl": "",
+        "is_expires": false,
+        "expires_time": "2026年07月26日 04时55分38秒",
+        "extension_code": "",
+        "content_str": "",
+        "content_img": "",
+        "entry": true,
+        "product": "月卡",
+        "touch": "",
+        "is_close": false,
+        "is_check": 0
+      }
+    },
+    "message": "成功"
+  },
+  "Login_loginGroup": {
+    "status": 1,
+    "message": "成功",
+    "data": {
+      "uid": 2157,
+      "token": "[REDACTED]"
+    }
+  },
+  "GroupCenter_getContent": {
+    "status": 1,
+    "data": "【河北新闻网】政声直达·热点快评丨忧虑AI“抢饭碗”，不如锻造“新饭碗”</br><a style='color:red' href='https://mini.eastday.com/mobile/260625183757411113629.html' target='_blank'> 点击查看详情 </a></br></br>【河北新闻网】《政声直达》2026年6月25日</br><a style='color:red' href='https://mini.eastday.com/mobile/260625183330469542829.html' target='_blank'> 点击查看详情 </a></br></br>【杭州网】张钧甯原名比艺名还难认</br><a style='color:red' href='https://mini.eastday.com/mobile/260625181029485992685.html' target='_blank'> 点击查看详情 </a></br></br>【江南时报网】端午守护“心”健康！射阳县人民医院心血管内科成功开展两项心脏介入治疗新技术</br><a style='color:red' href='https://mini.eastday.com/mobile/260625180508780379473.html' target='_blank'> 点击查看详情 </a></br></br>【东方资讯河北频道】土壤为什么有不同颜色？</br><a style='color:red' href='https://mini.eastday.com/mobile/260625172714374490877.html' target='_blank'> 点击查看详情 </a></br></br>【东方资讯河北频道】高校招生 你问我答｜首批“人工智能教育”新专业启动招生 一文了解</br><a style='color:red' href='https://mini.eastday.com/mobile/260625171946639995368.html' target='_blank'> 点击查看详情 </a></br></br>【东方资讯河北频道】邯郸市多部门联合：禁毒宣传进社区</br><a style='color:red' href='https://mini.eastday.com/mobile/260625171645892534969.html' target='_blank'> 点击查看详情 </a></br></br>【东方资讯河北频道】在分数和录取线之间 如何更好填报高考志愿？专家建议</br><a style='color:red' href='https://mini.eastday.com/mobile/260625171427629518276.html' target='_blank'> 点击查看详情 </a></br></br>【东方资讯河北频道】北京升级市政服务：因检修等原因停水停电，应提前48小时通知</br><a style='color:red' href='https://mini.eastday.com/mobile/260625171352496527837.html' target='_blank'> 点击查看详情 </a></br></br>【当代先锋网】贵州税务部门曝光2起私户收款隐匿收入偷税案件</br><a style='color:red' href='https://mini.eastday.com/mobile/260625171319120947766.html' target='_blank'> 点击查看详情 </a></br></br>",
+    "message": "成功"
+  },
+  "GroupCenterSrc": {
+    "sign": {
+      "status": 1,
+      "data": {
+        "title": "签到设置",
+        "notice": "签到设置",
+        "comment": "<p>群内发送“签到”</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "input",
+            "label": "签到关键词",
+            "name": "sign_content",
+            "placeholder": "签到",
+            "value": "签到",
+            "max": 32
+          },
+          {
+            "type": "textarea",
+            "label": "签到回复语",
+            "name": "message",
+            "placeholder": "文本框",
+            "rows": 3,
+            "tag": {
+              "昵称": "[昵称]",
+              "换行": "[换行]",
+              "微信号": "[微信号]",
+              "金币": "[金币]",
+              "总金币": "[总金币]",
+              "钻石": "[钻石]",
+              "总钻石": "[总钻石]",
+              "总次": "[总次]",
+              "身份": "[身份]",
+              "连续": "[连续]",
+              "本月": "[本月]",
+              "日期": "[日期]",
+              "时间": "[时间]",
+              "排名": "[排名]",
+              "一言": "[一言]",
+              "正能量": "[正能量]",
+              "情话": "[情话]",
+              "舔狗日记": "[舔狗日记]",
+              "毒鸡汤": "[毒鸡汤]",
+              "cpdd": "[cpdd]",
+              "土味情话": "[土味情话]",
+              "绿茶语录": "[绿茶语录]",
+              "头衔": "[头衔]",
+              "签到人wxid": "[签到人wxid]"
+            },
+            "value": "@[昵称] 签到成功！[换行]—————————————[换行][@emoji=2728]奖励金币:[金币]个[换行][@emoji=2728]奖励钻石:[钻石]个[换行][@emoji=2728]连续签到:[连续]天[换行]—————————————[换行]天天签到的人最有爱了[@emoji=1F61D]",
+            "max": 255
+          },
+          {
+            "type": "number",
+            "label": "金币最小数量",
+            "name": "min_jb",
+            "placeholder": "签到金币最小数量",
+            "value": "100",
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "金币最大数量",
+            "name": "max_jb",
+            "placeholder": "签到金币最大数量",
+            "value": "9990",
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "钻石最小数量",
+            "name": "min_jf",
+            "placeholder": "签到钻石最小数量",
+            "value": "0",
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "钻石最大数量",
+            "name": "max_jf",
+            "placeholder": "签到钻石最大数量",
+            "value": "00",
+            "max": 10
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "menu": {
+      "status": 1,
+      "data": {
+        "title": "菜单设置",
+        "notice": "",
+        "comment": "<p>查询指令:“菜单” “功能”</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "radio",
+            "label": "菜单模块",
+            "name": "type",
+            "value": "[默认菜单]",
+            "select": {
+              "[默认菜单]": "默认菜单",
+              "[默认菜单2]": "默认菜单2",
+              "[三列菜单]": "三列菜单",
+              "[自定义菜单]": "自定义菜单"
+            }
+          },
+          {
+            "type": "textarea",
+            "label": "自定义",
+            "name": "message",
+            "placeholder": "文本框",
+            "rows": 3,
+            "tag": {
+              "换行": "[换行]"
+            },
+            "value": "",
+            "max": 255,
+            "remove": true
+          },
+          {
+            "type": "textarea",
+            "label": "总代额外内容",
+            "name": "agent_content",
+            "placeholder": "在这里输入额外内容",
+            "rows": 3,
+            "tag": {
+              "昵称": "[昵称]",
+              "群名": "[群名]",
+              "换行": "[换行]"
+            },
+            "value": "",
+            "max": 200,
+            "remove": true
+          },
+          {
+            "type": "textarea",
+            "label": "额外内容",
+            "name": "content",
+            "placeholder": "在这里输入额外内容",
+            "rows": 3,
+            "tag": {
+              "昵称": "[昵称]",
+              "群名": "[群名]",
+              "换行": "[换行]"
+            },
+            "value": "",
+            "max": 200
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "welcome": {
+      "status": 1,
+      "data": {
+        "title": "欢迎语设置",
+        "notice": "欢迎语设置",
+        "comment": "奖励可输入函数如=[邀请有效人数]*0.5+10",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "欢迎语音开关",
+            "name": "voice_checked",
+            "value": true
+          },
+          {
+            "type": "radio",
+            "label": "语音欢迎方式选择",
+            "name": "voice_method",
+            "value": "1",
+            "select": {
+              "1": "语音欢迎",
+              "2": "音乐卡片",
+              "3": "备用语音欢迎"
+            }
+          },
+          {
+            "type": "words",
+            "label": "添加欢迎语",
+            "name": "words",
+            "list": [
+              {
+                "type": "switch",
+                "label": "功能开关",
+                "name": "switch_checked",
+                "value": false
+              },
+              {
+                "type": "textarea",
+                "label": "内容",
+                "placeholder": "内容",
+                "name": "content",
+                "rows": 3,
+                "value": "",
+                "tag": {
+                  "昵称": "[昵称]",
+                  "群名": "[群名]",
+                  "换行": "[换行]",
+                  "剩余金币": "[剩余金币]",
+                  "剩余钻石": "[剩余钻石]",
+                  "剩余魅力": "[剩余魅力]",
+                  "邀请人": "[邀请人]",
+                  "有效邀请人数": "[有效邀请人数]",
+                  "邀请人奖励钻石": "[邀请人奖励钻石]",
+                  "邀请人奖励金币": "[邀请人奖励金币]",
+                  "邀请人奖励魅力": "[邀请人奖励魅力]",
+                  "邀请人wxid": "[邀请人wxid]",
+                  "进群人wxid": "[进群人wxid]"
+                },
+                "exempt": true
+              }
+            ],
+            "value": [
+              {
+                "switch_checked": true,
+                "content": "@[昵称] \n哈喽小哥哥小姐姐～\n       俺是本群小管家\n         要要要～切克闹～\n             欢迎你来到[群名]～\n    愿世界美好与你环环相扣～\n-------------------\n \n本群群规如下:\n文明发言，严禁黄赌毒，禁止发广告，禁止刷屏，禁止辱骂群友，团结友善，开心聊天。\n违反群规送单程票一张\n【想找宝宝玩游戏的话发 菜单 就行哦】",
+                "pic": ""
+              }
+            ]
+          },
+          {
+            "type": "words",
+            "label": "添加链接",
+            "name": "link",
+            "list": [
+              {
+                "type": "switch",
+                "label": "功能开关",
+                "name": "switch_checked",
+                "value": false
+              },
+              {
+                "type": "textarea",
+                "label": "标题",
+                "placeholder": "标题",
+                "name": "title",
+                "rows": 1,
+                "value": "",
+                "tag": {
+                  "昵称": "[昵称]",
+                  "群名": "[群名]"
+                }
+              },
+              {
+                "type": "textarea",
+                "label": "内容",
+                "placeholder": "内容",
+                "name": "content",
+                "rows": 3,
+                "value": "",
+                "tag": {
+                  "昵称": "[昵称]",
+                  "群名": "[群名]",
+                  "换行": "[换行]",
+                  "剩余金币": "[剩余金币]",
+                  "剩余钻石": "[剩余钻石]",
+                  "剩余魅力": "[剩余魅力]",
+                  "邀请人": "[邀请人]",
+                  "有效邀请人数": "[有效邀请人数]",
+                  "邀请人奖励钻石": "[邀请人奖励钻石]",
+                  "邀请人奖励金币": "[邀请人奖励金币]",
+                  "邀请人奖励魅力": "[邀请人奖励魅力]",
+                  "邀请人wxid": "[邀请人wxid]",
+                  "进群人wxid": "[进群人wxid]"
+                }
+              }
+            ],
+            "value": [
+              {
+                "switch_checked": true,
+                "title": "欢迎新人 [昵称] 进群",
+                "content": "邀请人:[邀请人]\n有效邀请人数:[有效邀请人数]\n右边是新人头像哦！",
+                "url": "http://baidu.com/"
+              }
+            ]
+          },
+          {
+            "type": "input",
+            "label": "新人头像链接",
+            "name": "url",
+            "placeholder": "请输入链接",
+            "value": "https://weixin.qq.com/",
+            "max": 180
+          },
+          {
+            "type": "number",
+            "label": "邀请人钻石奖励",
+            "name": "jifen",
+            "placeholder": "请输入钻石奖励数量",
+            "rows": 1,
+            "value": "",
+            "max": 180
+          },
+          {
+            "type": "number",
+            "label": "邀请人金币奖励",
+            "name": "jinbi",
+            "placeholder": "请输入金币奖励数量",
+            "rows": 1,
+            "value": "",
+            "max": 180
+          },
+          {
+            "type": "number",
+            "label": "邀请人魅力奖励",
+            "name": "meili",
+            "placeholder": "请输入魅力奖励数量",
+            "rows": 1,
+            "value": "",
+            "max": 180
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "greentea": {
+      "status": 1,
+      "data": {
+        "title": "绿茶语录",
+        "notice": "设置绿茶语录",
+        "comment": "<p>如:绿茶语录</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "input",
+            "label": "花费金币",
+            "name": "jb",
+            "placeholder": "输入每次金币数量",
+            "value": 0
+          },
+          {
+            "type": "input",
+            "label": "花费积分",
+            "name": "jf",
+            "placeholder": "输入每次积分数量",
+            "value": 0
+          },
+          {
+            "type": "input",
+            "label": "花费魅力",
+            "name": "ml",
+            "placeholder": "输入每次魅力数量",
+            "value": 0
+          },
+          {
+            "type": "time",
+            "label": "开始时间段",
+            "placeholder": "选择时间",
+            "name": "start_time",
+            "show": false,
+            "value": "00:00"
+          },
+          {
+            "type": "time",
+            "label": "结束时间段",
+            "placeholder": "选择时间",
+            "name": "end_time",
+            "show": false,
+            "value": "23:59"
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "tgrj": {
+      "status": 1,
+      "data": {
+        "title": "舔狗日记",
+        "notice": "设置舔狗日记玩法",
+        "comment": "<p>如:舔狗日记</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "input",
+            "label": "花费金币",
+            "name": "jb",
+            "placeholder": "输入每次金币数量",
+            "value": 0
+          },
+          {
+            "type": "input",
+            "label": "花费积分",
+            "name": "jf",
+            "placeholder": "输入每次积分数量",
+            "value": 0
+          },
+          {
+            "type": "input",
+            "label": "花费魅力",
+            "name": "ml",
+            "placeholder": "输入每次魅力数量",
+            "value": 0
+          },
+          {
+            "type": "time",
+            "label": "开始时间段",
+            "placeholder": "选择时间",
+            "name": "start_time",
+            "show": false,
+            "value": "00:00"
+          },
+          {
+            "type": "time",
+            "label": "结束时间段",
+            "placeholder": "选择时间",
+            "name": "end_time",
+            "show": false,
+            "value": "23:59"
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "lowlove": {
+      "status": 1,
+      "data": {
+        "title": "土味情话",
+        "notice": "设置土味情话",
+        "comment": "<p>如:土味情话</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "input",
+            "label": "花费金币",
+            "name": "jb",
+            "placeholder": "输入每次金币数量",
+            "value": 0
+          },
+          {
+            "type": "input",
+            "label": "花费积分",
+            "name": "jf",
+            "placeholder": "输入每次积分数量",
+            "value": 0
+          },
+          {
+            "type": "input",
+            "label": "花费魅力",
+            "name": "ml",
+            "placeholder": "输入每次魅力数量",
+            "value": 0
+          },
+          {
+            "type": "time",
+            "label": "开始时间段",
+            "placeholder": "选择时间",
+            "name": "start_time",
+            "show": false,
+            "value": "00:00"
+          },
+          {
+            "type": "time",
+            "label": "结束时间段",
+            "placeholder": "选择时间",
+            "name": "end_time",
+            "show": false,
+            "value": "23:59"
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "weather": {
+      "status": 1,
+      "data": {
+        "title": "天气播报",
+        "notice": "设置播报地区",
+        "comment": "<p>天气预回复 地区+天气 比如 深圳天气</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "定时开关",
+            "name": "delay_checked",
+            "value": false
+          },
+          {
+            "type": "radio",
+            "label": "时间选择",
+            "name": "today_select",
+            "value": "1",
+            "select": {
+              "1": "今日天气",
+              "2": "一周天气"
+            }
+          },
+          {
+            "type": "textarea",
+            "label": "地区",
+            "name": "city",
+            "placeholder": "如:厦门",
+            "rows": 1,
+            "tag": {
+              "分隔符": "[分隔符]"
+            },
+            "value": "",
+            "max": 180,
+            "exempt": true
+          },
+          {
+            "type": "time",
+            "label": "播报时间",
+            "placeholder": "选择时间",
+            "name": "current_time",
+            "show": false,
+            "value": ""
+          },
+          {
+            "type": "checkbox",
+            "label": "播报日期",
+            "name": "week",
+            "direction": "horizontal",
+            "value": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "select": [
+              "星期日",
+              "星期一",
+              "星期二",
+              "星期三",
+              "星期四",
+              "星期五",
+              "星期六"
+            ],
+            "default": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "partner": {
+      "status": 1,
+      "data": {
+        "title": "婚姻玩法",
+        "notice": "设置婚姻玩法",
+        "comment": "",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "约会开关",
+            "name": "yuehui_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "逼婚开关",
+            "name": "bihun_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "抢婚开关",
+            "name": "qianghun_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "洞房开关",
+            "name": "dongfang_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "宝宝开关",
+            "name": "child_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "宝宝打工开关",
+            "name": "childwork_checked",
+            "value": false
+          },
+          {
+            "type": "radio",
+            "label": "宝宝打工奖励",
+            "name": "child_work",
+            "value": 1,
+            "select": {
+              "1": "金币",
+              "2": "钻石"
+            }
+          },
+          {
+            "type": "number",
+            "label": "离婚证价格",
+            "name": "lihunzheng",
+            "placeholder": "设置使用离婚证价格",
+            "value": "1000",
+            "max": 10
+          },
+          {
+            "type": "slider",
+            "label": "逼婚成功率",
+            "name": "bh_odds",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 20
+          },
+          {
+            "type": "slider",
+            "label": "逃婚成功率",
+            "name": "th_odds",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 15
+          },
+          {
+            "type": "slider",
+            "label": "抢婚成功率",
+            "name": "qh_odds",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 20
+          },
+          {
+            "type": "slider",
+            "label": "洞房成功率",
+            "name": "df_odds",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 40
+          },
+          {
+            "type": "slider",
+            "label": "约会成功率",
+            "name": "yh_odds",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 40
+          },
+          {
+            "type": "slider",
+            "label": "洞房成功怀孕概率",
+            "name": "hy_odds",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "value": 50
+          },
+          {
+            "type": "number",
+            "label": "约会消耗金币",
+            "name": "yh_jinbi",
+            "placeholder": "约会消耗金币",
+            "value": "1000",
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "约会魅力值消耗",
+            "name": "yh_meili",
+            "placeholder": "约会魅力值消耗",
+            "value": 100,
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "约会成功奖励恩爱值",
+            "name": "yh_int",
+            "placeholder": "约会成功奖励恩爱值",
+            "value": 100,
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "求婚魅力要求数值",
+            "name": "qh_meili",
+            "placeholder": "求婚魅力要求数值",
+            "value": "334400",
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "逃婚需要的金币数量",
+            "name": "th_jinbi",
+            "placeholder": "逃婚需要的金币数量",
+            "value": 1000,
+            "max": 10
+          },
+          {
+            "type": "number",
+            "label": "洞房消耗及奖励恩爱值",
+            "name": "df_int",
+            "placeholder": "洞房消耗及奖励恩爱值",
+            "value": 100,
+            "max": 10
+          },
+          {
+            "type": "switch",
+            "label": "祝福表情",
+            "name": "marry_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "祝福音乐",
+            "name": "music_checked",
+            "value": true
+          },
+          {
+            "type": "textarea",
+            "label": "结婚贺词",
+            "placeholder": "在这里输入内容",
+            "name": "content",
+            "rows": 5,
+            "value": "=====[@emoji=1f49d]进行拜堂礼[@emoji=1f49d]=====\n[@emoji=1f491]一拜天地\n[@emoji=1f491]二拜祖先\n[@emoji=1f491]三拜高堂\n[@emoji=1f491]夫妻交拜\n从今以后，两位在群里@对方聊天，都会收获恩爱指数峨！\n回复 洞房 可以进入洞房哦！",
+            "tag": []
+          },
+          {
+            "type": "textarea",
+            "label": "求婚贺词",
+            "placeholder": "在这里输入内容",
+            "name": "ask_content",
+            "rows": 5,
+            "value": "======[@emoji=1f49d]求婚贺词[@emoji=1f49d]======\n[@emoji=1f389]祝贺天下有情人终成眷属！[@emoji=1f389]",
+            "tag": []
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "fish": {
+      "status": 1,
+      "data": {
+        "title": "超级渔场",
+        "notice": "",
+        "comment": "<p>比如:超级渔场</p>",
+        "form": [
+          {
+            "type": "checkbox",
+            "label": "本群鱼种",
+            "name": "kinds",
+            "direction": "horizontal",
+            "value": [
+              "8",
+              "9",
+              "10",
+              "11",
+              "12"
+            ],
+            "select": {
+              "8": "白条",
+              "9": "鳑鲏",
+              "10": "麦穗",
+              "11": "罗非鱼",
+              "12": "清道夫"
+            },
+            "default": [
+              "8",
+              "9",
+              "10",
+              "11",
+              "12"
+            ]
+          },
+          {
+            "type": "input",
+            "label": "白条（金币价值）",
+            "name": "group_fish_8",
+            "placeholder": "输入金币数量",
+            "value": 1,
+            "max": 10000000,
+            "min": 1
+          },
+          {
+            "type": "input",
+            "label": "鳑鲏（钻石价值）",
+            "name": "group_fish_9",
+            "placeholder": "输入钻石数量",
+            "value": 1,
+            "max": 10000000,
+            "min": 1
+          },
+          {
+            "type": "input",
+            "label": "麦穗（魅力价值）",
+            "name": "group_fish_10",
+            "placeholder": "输入魅力数量",
+            "value": 1,
+            "max": 10000000,
+            "min": 1
+          },
+          {
+            "type": "input",
+            "label": "罗非鱼（身价价值）",
+            "name": "group_fish_11",
+            "placeholder": "输入身价数量",
+            "value": 1,
+            "max": 10000000,
+            "min": 1
+          },
+          {
+            "type": "input",
+            "label": "清道夫（恩爱价值）",
+            "name": "group_fish_12",
+            "placeholder": "输入恩爱数量",
+            "value": 1,
+            "max": 10000000,
+            "min": 1
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "son": {
+      "status": 1,
+      "data": {
+        "title": "智能聊天设置",
+        "notice": "智能聊天设置",
+        "comment": "<p>@[小助手]今天的天气怎么样</p><p >开启语音答复'[小助手]'则以语音形式回复</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "hidden",
+            "label": "趣味语音开关",
+            "name": "more_checked",
+            "value": true
+          },
+          {
+            "type": "radio",
+            "label": "聊天",
+            "name": "voice",
+            "value": "2",
+            "select": {
+              "1": "文字回复",
+              "2": "语音回复"
+            }
+          },
+          {
+            "type": "radio",
+            "label": "模式",
+            "name": "model",
+            "value": "1",
+            "select": {
+              "1": "简洁模式",
+              "2": "ai模式(回复内容会比较长，所以导致回复速度会比较慢哦！如果你使用语音回复+ai模式 因为内容比较长可能会失败哦！)"
+            }
+          },
+          {
+            "type": "textarea",
+            "label": "简洁模式appid",
+            "name": "short_message",
+            "placeholder": "可以填写多个用[分隔]分开",
+            "rows": 10,
+            "tag": {
+              "分隔": "[分隔]"
+            },
+            "replace": true,
+            "value": "",
+            "max": 1000,
+            "remove": true
+          },
+          {
+            "type": "textarea",
+            "label": "ai模式appid",
+            "name": "ai_message",
+            "placeholder": "可以填写多个用[分隔]分开",
+            "rows": 10,
+            "tag": {
+              "分隔": "[分隔]"
+            },
+            "replace": true,
+            "value": "",
+            "max": 1000,
+            "remove": true
+          },
+          {
+            "type": "radio",
+            "label": "语音",
+            "name": "per",
+            "value": 4,
+            "select": {
+              "1": "度逍遥-磁性男声",
+              "2": "度博文-情感男声",
+              "3": "度小贤-情感男声",
+              "4": "度小鹿-甜美女声",
+              "5": "度灵儿-清澈女声",
+              "6": "度小乔-情感女声",
+              "7": "度小雯-成熟女声",
+              "8": "度米朵-可爱女童",
+              "9": "讯飞-七哥（男声）",
+              "10": "讯飞-子晴（女声）",
+              "11": "讯飞-一菲（女声）",
+              "12": "讯飞-小露（女声）",
+              "13": "讯飞-小鹏（男声）",
+              "14": "讯飞-萌小新（男声）",
+              "15": "讯飞-小雪（女声）",
+              "16": "讯飞-超哥（男声）",
+              "17": "讯飞-小媛（女声）",
+              "18": "讯飞-叶子（女声）",
+              "19": "讯飞-千雪（女声）",
+              "20": "讯飞-小忠（男声）",
+              "21": "讯飞-万叔（男声）",
+              "22": "讯飞-虫虫（女声）",
+              "23": "讯飞-楠楠（儿童-男）",
+              "24": "讯飞-晓璇（女声）",
+              "25": "讯飞-芳芳（儿童-女）",
+              "26": "讯飞-嘉嘉（女声）",
+              "27": "讯飞-小倩（女声）",
+              "28": "讯飞-Catherine（女声）"
+            }
+          }
+        ]
+      },
+      "message": "成功"
+    },
+    "guessphrase": {
+      "status": 1,
+      "data": {
+        "title": "猜成语设置",
+        "notice": "",
+        "comment": "<p>如:猜成语</p>",
+        "form": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": true
+          },
+          {
+            "type": "switch",
+            "label": "管理员启动",
+            "name": "is_manage",
+            "value": false
+          },
+          {
+            "type": "number",
+            "label": "每局最小金币",
+            "name": "min_gold",
+            "placeholder": "每局获取最小金币",
+            "value": 1000,
+            "max": 6
+          },
+          {
+            "type": "number",
+            "label": "每局最大金币",
+            "name": "max_gold",
+            "placeholder": "每局获取最大金币",
+            "value": 1000,
+            "max": 6
+          }
+        ]
+      },
+      "message": "成功"
+    }
+  }
+}

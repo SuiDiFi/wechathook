@@ -1,0 +1,24 @@
+# 总代后台（apps/admin）— 本地开发 / 云端部署共用
+listen:
+  host: "127.0.0.1"
+  port: 8790
+
+# bot-server 地址（本地默认 8788；云端填公网或内网 URL）
+botServer: "http://127.0.0.1:8788"
+
+configPath: "config/bot.yaml"
+
+# 生产环境务必设置 ADMIN_TOKEN；空则开发模式无鉴权
+auth:
+  token: ""
+
+# 官方总控登录（/console）
+master:
+  username: "admin"
+  password: "123456"
+
+# 萌兔总代登录（/agent）
+login:
+  username: "1000"
+  password: "000000"
+  uid: 1000

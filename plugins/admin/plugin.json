@@ -1,0 +1,9 @@
+{
+  "id": "admin",
+  "name": "群管理",
+  "version": "0.1.0",
+  "description": "管理员指令骨架（踢人等）",
+  "enabled": true,
+  "commands": ["踢"],
+  "main": "dist/index.js"
+}

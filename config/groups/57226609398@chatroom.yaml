@@ -1,0 +1,16 @@
+# 对齐萌兔 explis + handleMessagecallback.acc_wxid
+replyAccount: "along523618"
+licenseExpires: 1893456000
+sign:
+  enabled: true
+  keyword: "签到"
+  minCoins: 100
+  maxCoins: 9990
+  messageTemplate: |
+    @[昵称] 签到成功！
+    —————————————
+    ✨奖励金币:[金币]个
+    ✨奖励钻石:[钻石]个
+    ✨连续签到:[连续]天
+    —————————————
+    天天签到的人最有爱了😝

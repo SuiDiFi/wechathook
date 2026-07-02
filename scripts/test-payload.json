@@ -1,0 +1,10 @@
+ {
+  "fromUserName": { "String": "45220347292@chatroom" },
+  "member_info": {
+    "userName": "wxid_test",
+    "nickName": "测试用户"
+  },
+  "msgType": "1",
+  "newMsgId": "12345",
+  "real_content": "#帮助"
+}

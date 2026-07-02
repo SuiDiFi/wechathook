@@ -1,0 +1,298 @@
+[
+  {
+    "url": "https://wx.wxmtu.com/agent/",
+    "ok": true,
+    "status": 200,
+    "size": 760,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\agent\\index.html",
+    "rel": "agent\\index.html"
+  },
+  {
+    "url": "https://wx.wxmtu.com/agent/index.html",
+    "ok": true,
+    "status": 200,
+    "size": 760,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\agent\\index.html",
+    "rel": "agent/index.html"
+  },
+  {
+    "url": "https://wx.wxmtu.com/favicon.ico",
+    "ok": true,
+    "status": 200,
+    "size": 4286,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\favicon.ico",
+    "rel": "favicon.ico"
+  },
+  {
+    "url": "https://wx.wxmtu.com/static/config.js",
+    "ok": true,
+    "status": 200,
+    "size": 164,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\static\\config.js",
+    "rel": "static/config.js"
+  },
+  {
+    "url": "https://wx.wxmtu.com/css/app.eb257a52.css",
+    "ok": true,
+    "status": 200,
+    "size": 307826,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\css\\app.eb257a52.css",
+    "rel": "css/app.eb257a52.css"
+  },
+  {
+    "url": "https://wx.wxmtu.com/js/app.d31f1d00.js",
+    "ok": true,
+    "status": 200,
+    "size": 952544,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\js\\app.d31f1d00.js",
+    "rel": "js/app.d31f1d00.js"
+  },
+  {
+    "url": "https://wx.wxmtu.com/agent/favicon.ico",
+    "ok": true,
+    "status": 200,
+    "size": 760,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\agent\\favicon.ico",
+    "rel": "agent/favicon.ico"
+  },
+  {
+    "url": "https://wx.wxmtu.com/agent/static/config.js",
+    "ok": true,
+    "status": 200,
+    "size": 760,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\agent\\static\\config.js",
+    "rel": "agent/static/config.js"
+  },
+  {
+    "url": "https://wx.wxmtu.com/agent/css/app.eb257a52.css",
+    "ok": true,
+    "status": 200,
+    "size": 760,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\agent\\css\\app.eb257a52.css",
+    "rel": "agent/css/app.eb257a52.css"
+  },
+  {
+    "url": "https://wx.wxmtu.com/agent/js/app.d31f1d00.js",
+    "ok": true,
+    "status": 200,
+    "size": 760,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\agent\\js\\app.d31f1d00.js",
+    "rel": "agent/js/app.d31f1d00.js"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/share-1.c8b8daf8.png",
+    "ok": true,
+    "status": 200,
+    "size": 8616,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\share-1.c8b8daf8.png",
+    "rel": "img/share-1.c8b8daf8.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/share-icon-3.2678f88e.png",
+    "ok": true,
+    "status": 200,
+    "size": 9173,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\share-icon-3.2678f88e.png",
+    "rel": "img/share-icon-3.2678f88e.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/authBg.c9d154e1.png",
+    "ok": true,
+    "status": 200,
+    "size": 33172,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\authBg.c9d154e1.png",
+    "rel": "img/authBg.c9d154e1.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/main_header_bg.ca8a35dd.png",
+    "ok": true,
+    "status": 200,
+    "size": 22191,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\main_header_bg.ca8a35dd.png",
+    "rel": "img/main_header_bg.ca8a35dd.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/des_kejitu.3cd321fc.png",
+    "ok": true,
+    "status": 200,
+    "size": 10710,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\des_kejitu.3cd321fc.png",
+    "rel": "img/des_kejitu.3cd321fc.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/bug_group.f28ac97c.png",
+    "ok": true,
+    "status": 200,
+    "size": 9771,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\bug_group.f28ac97c.png",
+    "rel": "img/bug_group.f28ac97c.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/index.51115ccf.png",
+    "ok": true,
+    "status": 200,
+    "size": 49421,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\index.51115ccf.png",
+    "rel": "img/index.51115ccf.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/center.51a840e4.png",
+    "ok": true,
+    "status": 200,
+    "size": 17449,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\center.51a840e4.png",
+    "rel": "img/center.51a840e4.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/group_center.63d4aeab.png",
+    "ok": true,
+    "status": 200,
+    "size": 74188,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\group_center.63d4aeab.png",
+    "rel": "img/group_center.63d4aeab.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/icon-1.63c0a479.png",
+    "ok": true,
+    "status": 200,
+    "size": 98940,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\icon-1.63c0a479.png",
+    "rel": "img/icon-1.63c0a479.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/icon-head.5793389e.png",
+    "ok": true,
+    "status": 200,
+    "size": 65518,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\icon-head.5793389e.png",
+    "rel": "img/icon-head.5793389e.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/all.b983bfd5.png",
+    "ok": true,
+    "status": 200,
+    "size": 5845,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\all.b983bfd5.png",
+    "rel": "img/all.b983bfd5.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/group_tip.6dda35d7.gif",
+    "ok": true,
+    "status": 200,
+    "size": 230569,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\group_tip.6dda35d7.gif",
+    "rel": "img/group_tip.6dda35d7.gif"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/agent_3.44db9d1c.png",
+    "ok": true,
+    "status": 200,
+    "size": 4228,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\agent_3.44db9d1c.png",
+    "rel": "img/agent_3.44db9d1c.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/sever.d3271e15.png",
+    "ok": true,
+    "status": 200,
+    "size": 5827,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\sever.d3271e15.png",
+    "rel": "img/sever.d3271e15.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/group.7cd496ba.png",
+    "ok": true,
+    "status": 200,
+    "size": 6796,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\group.7cd496ba.png",
+    "rel": "img/group.7cd496ba.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/instruct.a9b03280.png",
+    "ok": true,
+    "status": 200,
+    "size": 5892,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\instruct.a9b03280.png",
+    "rel": "img/instruct.a9b03280.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/zhu.5ca277b4.png",
+    "ok": true,
+    "status": 200,
+    "size": 12078,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\zhu.5ca277b4.png",
+    "rel": "img/zhu.5ca277b4.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/information.7a08f3e5.png",
+    "ok": true,
+    "status": 200,
+    "size": 6148,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\information.7a08f3e5.png",
+    "rel": "img/information.7a08f3e5.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/operation.ba5d06c1.png",
+    "ok": true,
+    "status": 200,
+    "size": 6129,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\operation.ba5d06c1.png",
+    "rel": "img/operation.ba5d06c1.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/agent_2.b08392e7.png",
+    "ok": true,
+    "status": 200,
+    "size": 5810,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\agent_2.b08392e7.png",
+    "rel": "img/agent_2.b08392e7.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/tutorial.0eb77249.png",
+    "ok": true,
+    "status": 200,
+    "size": 5985,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\tutorial.0eb77249.png",
+    "rel": "img/tutorial.0eb77249.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/header_img.18230581.png",
+    "ok": true,
+    "status": 200,
+    "size": 9097,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\header_img.18230581.png",
+    "rel": "img/header_img.18230581.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/agent_4.71e2278d.png",
+    "ok": true,
+    "status": 200,
+    "size": 5374,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\agent_4.71e2278d.png",
+    "rel": "img/agent_4.71e2278d.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/head.40740b2d.jpg",
+    "ok": true,
+    "status": 200,
+    "size": 33645,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\head.40740b2d.jpg",
+    "rel": "img/head.40740b2d.jpg"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/agent_1.1c880c51.png",
+    "ok": true,
+    "status": 200,
+    "size": 5543,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\agent_1.1c880c51.png",
+    "rel": "img/agent_1.1c880c51.png"
+  },
+  {
+    "url": "https://wx.wxmtu.com/img/error.7229b034.png",
+    "ok": true,
+    "status": 200,
+    "size": 4415,
+    "dest": "D:\\wechathook\\reference\\mtrobot-agent-portal\\static\\img\\error.7229b034.png",
+    "rel": "img/error.7229b034.png"
+  }
+]

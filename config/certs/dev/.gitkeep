@@ -1,0 +1,1 @@
+# 自签证书目录；运行 pnpm tls:gen 生成 dev-*.pem（勿提交私钥）

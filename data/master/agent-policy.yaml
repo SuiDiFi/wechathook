@@ -1,0 +1,26 @@
+agent:
+  enabled: true
+  login:
+    username: '1000'
+    password: '000000'
+    uid: 1000
+  display:
+    serveName: '1000'
+    robotContent: 自建 bot-server
+    quotaNum: 212
+  menu:
+    hiddenRoutes: []
+  features:
+    showCloudSlots: true
+    showBuyPage: true
+announcement: ''
+agents:
+  - enabled: true
+    login:
+      username: '1000'
+      password: '000000'
+      uid: 1000
+    display:
+      serveName: '1000'
+      robotContent: 自建 bot-server
+      quotaNum: 212

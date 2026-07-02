@@ -1,0 +1,17 @@
+---
+description: C-Local 窗口 — gateway、hook、relay、transport
+globs: apps/gateway/**,apps/relay-bridge/**,packages/hook-adapter/**,packages/transport/**
+alwaysApply: false
+---
+
+# C-Local 边界
+
+**职责：** inject 回调、Hook 出站、relay 转发、rabbitr41955 传输。
+
+**可改：** `apps/gateway/**`、`apps/relay-bridge/**`、`packages/hook-adapter/**`、`packages/transport/**`
+
+**禁止：** admin UI、77 op schema、萌兔 srcPost 逻辑。
+
+**契约：** `docs/development/contracts/super-api.md`（relay 转发段）
+
+**验证：** `pnpm e2e:inject`、`pnpm e2e:mvp`（relay 段）

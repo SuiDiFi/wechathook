@@ -1,0 +1,39 @@
+{
+  "status": 1,
+  "data": {
+    "title": "猜成语设置",
+    "notice": "",
+    "comment": "<p>如:猜成语</p>",
+    "form": [
+      {
+        "type": "switch",
+        "label": "功能开关",
+        "name": "switch_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "管理员启动",
+        "name": "is_manage",
+        "value": false
+      },
+      {
+        "type": "number",
+        "label": "每局最小金币",
+        "name": "min_gold",
+        "placeholder": "每局获取最小金币",
+        "value": 1000,
+        "max": 6
+      },
+      {
+        "type": "number",
+        "label": "每局最大金币",
+        "name": "max_gold",
+        "placeholder": "每局获取最大金币",
+        "value": 1000,
+        "max": 6
+      }
+    ]
+  },
+  "message": "成功"
+}

@@ -1,0 +1,47 @@
+transport:
+  mode: rabbitr41955
+
+rabbitr:
+  dllPath: "D:\\Mtrobot\\system\\rabbitr.dll"
+  wechatExe: "C:\\Program Files\\Tencent\\Weixin\\Weixin.exe"
+  wechatVersion: "4.1.9.55"
+
+hook:
+  # Hook 4.1.8.27 HTTP API 地址（http_server_port，默认 19088）
+  baseUrl: "http://127.0.0.1:19088"
+  # 接收模式: http = Hook POST 到 /api/recvMsg；tcp = 监听 61108
+  receiveMode: "http"
+  callbackPath: "/api/recvMsg"
+  tcpHost: "0.0.0.0"
+  tcpPort: 61108
+  httpServerPort: 19088
+  webhookSecret: ""
+
+bot:
+  commandPrefix: "#"
+  ownerWxids:
+    - "longbiao079239"
+  adminWxids:
+    - "longbiao079239"
+  botWxid: "along523618"
+  allowedRooms: []
+  port: 8787
+
+# inject 直连模式：gateway 收 rabbitr 回调 → bot-server → /r/stm 出站
+botServer:
+  url: "http://127.0.0.1:8788"
+  relayEnabled: true
+
+plugins:
+  globalEnabled:
+    - help
+    - welcome
+    - checkin
+    - admin
+    - game-stub
+  dir: plugins
+
+storage:
+  dbPath: data/bot.db
+
+groups: {}

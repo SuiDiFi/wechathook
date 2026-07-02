@@ -1,0 +1,9 @@
+{
+  "id": "help",
+  "name": "帮助",
+  "version": "0.1.0",
+  "description": "列出已启用插件与可用指令",
+  "enabled": true,
+  "commands": ["帮助", "help", "指令"],
+  "main": "dist/index.js"
+}

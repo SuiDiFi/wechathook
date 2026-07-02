@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/shared" },
+    { "path": "packages/hook-adapter" },
+    { "path": "packages/bot-core" },
+    { "path": "plugins/help" },
+    { "path": "plugins/welcome" },
+    { "path": "plugins/checkin" },
+    { "path": "plugins/admin" },
+    { "path": "plugins/game-stub" },
+    { "path": "apps/gateway" }
+  ]
+}

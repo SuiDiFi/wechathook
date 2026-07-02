@@ -1,0 +1,9 @@
+{
+  "id": "checkin",
+  "name": "签到",
+  "version": "0.1.0",
+  "description": "每日签到与积分排行榜",
+  "enabled": true,
+  "commands": ["签到", "排行榜"],
+  "main": "dist/index.js"
+}

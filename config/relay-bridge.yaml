@@ -1,0 +1,29 @@
+# 本地 API 桥接：萌兔壳 → 自建 bot-server
+# 使用前将 hosts 添加：127.0.0.1 api.wxmtu.com（需管理员）
+# 或仅联调：curl 直连本服务
+
+listen:
+  host: "127.0.0.1"
+  port: 8789
+
+# 萌兔官方 API（非 /super/* 请求透传，保持登录/鉴权）
+upstream:
+  mengtuApi: "https://api.wxmtu.com"
+
+# 自建 bot-server（/super/msg/*）
+botServer: "http://127.0.0.1:8788"
+
+# 只劫持 /super/*；设为 true 则全部走 bot-server（调试用）
+superOnly: false
+
+# 请求日志
+verbose: true
+
+# 萌兔壳 HTTPS 劫持（需管理员：hosts + 443 端口）
+# 生成证书: node scripts/generate-dev-tls.mjs
+tls:
+  enabled: false
+  host: "0.0.0.0"
+  port: 443
+  cert: "config/certs/dev/dev-cert.pem"
+  key: "config/certs/dev/dev-key.pem"

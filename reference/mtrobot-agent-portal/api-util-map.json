@@ -1,0 +1,44 @@
+{
+  "Agent": [
+    "login"
+  ],
+  "Login": [
+    "getCode"
+  ],
+  "Group": [
+    "get"
+  ],
+  "GroupCenter": [
+    "get"
+  ],
+  "GroupCenterSrc": [
+    "addList"
+  ],
+  "Arcade": [
+    "getTabs"
+  ],
+  "Member": [
+    "getInfo"
+  ],
+  "Product": [
+    "getField"
+  ],
+  "Codes": [
+    "post"
+  ],
+  "Order": [
+    "createOrder"
+  ],
+  "Buy": [
+    "getProduct"
+  ],
+  "Template": [
+    "getList"
+  ],
+  "Account": [
+    "getQrCode"
+  ],
+  "Auth": [
+    "servers"
+  ]
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+data/*.db
+data/*.db-*
+.env
+*.log
+config/certs/**/*.pem
+!config/certs/**/.gitkeep
+data/agent-overrides/
+.DS_Store
+*.tsbuildinfo
+playwright-tmp/
+temp-*/
+temp-xv-scan/

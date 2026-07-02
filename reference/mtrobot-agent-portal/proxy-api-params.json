@@ -1,0 +1,54 @@
+{
+  "source": "static/js/app.d31f1d00.js (agent-center-account-proxy / User.Proxy)",
+  "pageRoute": "/agent-center-account-proxy",
+  "proxyTypes": [
+    { "name": "机房", "type": "dc" },
+    { "name": "家庭组A组", "type": "box" },
+    { "name": "家庭组B组", "type": "edge" }
+  ],
+  "readOnly": {
+    "/user.proxy/index": {
+      "method": "POST",
+      "bodies": [
+        { "has": 1, "search": "" },
+        { "has": 1, "search": "上海" }
+      ],
+      "note": "主列表；has:1 含 wallet/user/lose；search 为搜索框"
+    },
+    "/user.proxy/nodes": {
+      "method": "POST",
+      "bodies": [
+        { "type": "dc" },
+        { "type": "box" },
+        { "type": "edge" }
+      ],
+      "note": "选购/换节点地区树；activeId 为 group_id"
+    },
+    "/user.proxy/proxies": { "method": "POST", "body": {}, "note": "公共节点目录" },
+    "/user.proxy/getPublicProxy": { "method": "POST", "body": {}, "note": "公共代理开关/支付时间" }
+  },
+  "dryRunPreview": {
+    "/user.proxy/sync": {
+      "method": "POST",
+      "body": { "action": false },
+      "note": "bundle 先 action:false 预览，确认后才 action:true；仅采 false"
+    },
+    "/user.proxy/move": {
+      "method": "POST",
+      "body": { "id": "<proxy_id>", "move_id": "<other_proxy_id>", "action": false },
+      "note": "转移预览；action:true 才写入"
+    }
+  },
+  "writeOnly_doNotSync": {
+    "/user.proxy/add": { "body": { "title": "", "username": "", "password": "", "ipv4": "", "port": "" } },
+    "/user.proxy/create": { "body": { "group_id": "<activeId from nodes>", "type": "dc|box|edge" } },
+    "/user.proxy/change": { "body": { "id": "<proxy_id>", "group_id": "<activeId>" } },
+    "/user.proxy/update": { "body": { "id": "", "title": "", "renew": 0 } },
+    "/user.proxy/delete": { "body": { "id": "", "force": false } },
+    "/user.proxy/set": { "body": { "username": "", "password": "" } },
+    "/user.proxy/switch": { "body": { "status": true } },
+    "/user.proxy/renew": { "body": { "id": "<proxy_id>" } },
+    "/user.proxy/check": { "body": { "ids": [], "type": "jy|tx" }, "note": "会触发真实检测，不采" },
+    "/user.proxy/up": { "body": { "id": "<proxy_id>" } }
+  }
+}

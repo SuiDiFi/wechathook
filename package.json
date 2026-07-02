@@ -1,0 +1,35 @@
+{
+  "name": "wechathook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "WeChat Hook gateway + bot-server monorepo",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm --filter @wechathook/gateway dev",
+    "dev:server": "pnpm --filter @wechathook/bot-server dev",
+    "dev:relay": "pnpm --filter @wechathook/relay-bridge dev",
+    "start:relay": "pnpm --filter @wechathook/relay-bridge start",
+    "start": "pnpm --filter @wechathook/gateway start",
+    "start:server": "pnpm --filter @wechathook/bot-server start",
+    "typecheck": "pnpm -r run typecheck",
+    "e2e:mvp": "node scripts/e2e-mvp-sign.mjs",
+    "e2e:sign-alignment": "node scripts/e2e-sign-alignment.mjs",
+    "contracts": "node scripts/contracts/run-all.mjs",
+    "contracts:static": "node scripts/contracts/static.mjs",
+    "contracts:runtime": "node scripts/contracts/runtime.mjs",
+    "e2e:inject": "node scripts/e2e-inject-loop.mjs",
+    "e2e:cloud": "node scripts/e2e-cloud-local.mjs",
+    "e2e:admin-ui": "node scripts/e2e-admin-ui.mjs",
+    "sync:mengtu-static": "node scripts/sync-mengtu-static.mjs",
+    "extract:admin-seed": "node scripts/extract-admin-seed.mjs",
+    "dev:admin": "pnpm --filter @wechathook/admin dev",
+    "start:admin": "pnpm sync:mengtu-static && pnpm --filter @wechathook/admin start",
+    "extract:inject-api": "node scripts/extract-mt-inject-api.mjs",
+    "tls:gen": "node scripts/generate-dev-tls.mjs",
+    "postinstall": "node scripts/ensure-native-deps.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

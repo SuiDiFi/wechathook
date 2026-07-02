@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover" />
+  <title>wechathook 总代个人后台</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="/agent/vant-icons.css?v=1" />
+  <link rel="stylesheet" href="/agent/console.css?v=7" />
+  <link rel="stylesheet" href="/agent/agent.css?v=17" />
+  <link rel="stylesheet" href="/agent/agent-spatial.css?v=1" />
+</head>
+<body class="portal-agent">
+  <div id="page-login" class="page-login">
+    <div class="login-scene" aria-hidden="true">
+      <div class="login-scene__glow login-scene__glow--1"></div>
+      <div class="login-scene__glow login-scene__glow--2"></div>
+      <div class="login-scene__glow login-scene__glow--3"></div>
+      <div class="login-scene__grid"></div>
+      <div class="login-scene__beam"></div>
+    </div>
+    <div class="login-shell">
+      <div class="login-brand">
+        <span class="login-brand__mark"><i class="ri-wechat-fill"></i></span>
+        <span class="login-brand__text">wechathook</span>
+      </div>
+      <div class="login-card login-card--acrylic">
+        <div class="login-card__edge"></div>
+        <div class="login-card__body">
+          <div class="login-logo"><i class="ri-shield-keyhole-line"></i></div>
+          <h1 class="login-title">总代个人后台</h1>
+          <p class="login-sub">Agent Portal · 安全登录</p>
+          <div class="form-field">
+            <i class="ri-user-line"></i>
+            <input id="inp-user" type="text" placeholder="总代账号" autocomplete="username" />
+          </div>
+          <div class="form-field">
+            <i class="ri-lock-line"></i>
+            <input id="inp-pass" type="password" placeholder="请输入密码" autocomplete="current-password" />
+          </div>
+          <button type="button" class="btn-primary btn-login" id="btn-login">
+            <span>登 录</span>
+            <i class="ri-arrow-right-line"></i>
+          </button>
+          <div class="login-err" id="login-err"></div>
+          <div class="login-notice" id="login-notice" style="display:none">
+            <div class="login-notice__title"><i class="ri-megaphone-line"></i> 平台公告</div>
+            <div class="login-notice__body" id="login-notice-body"></div>
+          </div>
+        </div>
+      </div>
+      <p class="login-foot">Mint Spatial · wechathook</p>
+    </div>
+  </div>
+
+  <div id="page-app" class="page-app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-icon"><i class="ri-user-star-line"></i></div>
+        <div>
+          <div class="brand-title">总代中心</div>
+          <div class="brand-sub">wechathook</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <button type="button" class="nav-item active" data-tab="dash"><i class="ri-dashboard-line"></i><span>首页</span></button>
+        <button type="button" class="nav-item" data-tab="bots"><i class="ri-wechat-line"></i><span>微信账号</span></button>
+        <button type="button" class="nav-item" data-tab="groups"><i class="ri-group-line"></i><span>群组</span></button>
+        <button type="button" class="nav-item" data-tab="menu"><i class="ri-apps-line"></i><span>功能</span></button>
+        <button type="button" class="nav-item" data-tab="settings"><i class="ri-settings-3-line"></i><span>设置</span></button>
+      </nav>
+      <a class="sidebar-link" href="/console/" target="_blank" rel="noopener"><i class="ri-shield-keyhole-line"></i> 官方总控</a>
+    </aside>
+    <main class="main-area">
+      <div id="view-root"></div>
+    </main>
+    <nav class="tabbar tabbar--mobile" id="tabbar">
+      <button type="button" class="tabbar-item active" data-tab="dash"><i class="ri-dashboard-line"></i><span>首页</span></button>
+      <button type="button" class="tabbar-item" data-tab="bots"><i class="ri-wechat-line"></i><span>账号</span></button>
+      <button type="button" class="tabbar-item" data-tab="groups"><i class="ri-group-line"></i><span>群组</span></button>
+      <button type="button" class="tabbar-item" data-tab="menu"><i class="ri-apps-line"></i><span>功能</span></button>
+      <button type="button" class="tabbar-item" data-tab="settings"><i class="ri-settings-3-line"></i><span>设置</span></button>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="/agent/app.js?v=12"></script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+/**
+ * Mint Spatial · 翡翠空间
+ * Apple 空间层次 × 微信绿品牌 — 登录后统一视觉
+ */
+.portal-agent {
+  --mint: #07c160;
+  --mint-light: #34d399;
+  --mint-deep: #047857;
+  --mint-soft: rgba(7, 193, 96, 0.1);
+  --mint-glow: rgba(7, 193, 96, 0.18);
+
+  --spatial-bg: #eceef2;
+  --spatial-bg-soft: #f4f5f7;
+  --spatial-surface: rgba(255, 255, 255, 0.82);
+  --spatial-surface-solid: #ffffff;
+  --spatial-border: rgba(0, 0, 0, 0.06);
+  --spatial-border-strong: rgba(0, 0, 0, 0.08);
+  --spatial-text: #1d1d1f;
+  --spatial-text-sub: #6e6e73;
+  --spatial-text-muted: #aeaeb2;
+
+  --spatial-blur: blur(40px) saturate(180%);
+  --spatial-radius: 20px;
+  --spatial-radius-sm: 12px;
+  --spatial-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 8px 28px rgba(0, 0, 0, 0.06);
+  --spatial-shadow-hover:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 16px 40px rgba(0, 0, 0, 0.08),
+    0 8px 24px var(--mint-glow);
+
+  /* 覆盖 console 橙色系 */
+  --primary: var(--mint);
+  --primary-dark: var(--mint-deep);
+  --primary-light: var(--mint-soft);
+  --accent: var(--mint);
+  --accent-dark: var(--mint-deep);
+  --accent-light: #ecfdf5;
+  --text: var(--spatial-text);
+  --text-secondary: var(--spatial-text-sub);
+  --border: var(--spatial-border);
+  --bg: var(--spatial-bg);
+  --glass-bg: var(--spatial-surface);
+  --glass-bg-strong: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(255, 255, 255, 0.65);
+  --glass-border-subtle: var(--spatial-border);
+  --glass-blur: var(--spatial-blur);
+  --glass-shadow: var(--spatial-shadow);
+  --glass-shadow-hover: var(--spatial-shadow-hover);
+  --radius: var(--spatial-radius);
+  --radius-sm: var(--spatial-radius-sm);
+}
+
+.portal-agent::before {
+  background:
+    radial-gradient(ellipse 60% 50% at 12% 0%, rgba(7, 193, 96, 0.08), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 95% 100%, rgba(52, 211, 153, 0.06), transparent 50%),
+    linear-gradient(180deg, #eef0f4 0%, #e8eaef 100%);
+}
+
+/* —— 壳层：侧栏 / 顶栏 / Tab —— */
+.portal-agent .sidebar {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: var(--spatial-blur);
+  -webkit-backdrop-filter: var(--spatial-blur);
+  border-right: 1px solid var(--spatial-border);
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.8);
+}
+
+.portal-agent .sidebar-brand {
+  border-bottom: 1px solid var(--spatial-border);
+}
+
+.portal-agent .sidebar-brand .brand-icon {
+  background: linear-gradient(145deg, var(--mint-light), var(--mint));
+  box-shadow: 0 4px 14px var(--mint-glow);
+  border: none;
+}
+
+.portal-agent .brand-title {
+  color: var(--spatial-text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.portal-agent .brand-sub {
+  color: var(--spatial-text-sub);
+  font-size: 12px;
+}
+
+.portal-agent .nav-item {
+  margin: 2px 10px;
+  padding: 10px 12px;
+  border-radius: var(--spatial-radius-sm);
+  color: var(--spatial-text-sub);
+  font-weight: 500;
+}
+
+.portal-agent .nav-item i {
+  color: var(--spatial-text-muted);
+  transition: color 0.2s;
+}
+
+.portal-agent .nav-item:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--spatial-text);
+}
+
+.portal-agent .nav-item.active {
+  background: var(--mint-soft);
+  color: var(--mint-deep);
+  font-weight: 600;
+  border: none;
+  box-shadow: none;
+  padding-left: 12px;
+}
+
+.portal-agent .nav-item.active i {
+  background: transparent;
+  color: var(--mint);
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+
+.portal-agent .sidebar-link {
+  background: var(--spatial-bg-soft);
+  border: 1px solid var(--spatial-border);
+  color: var(--spatial-text-sub);
+  box-shadow: none;
+}
+
+.portal-agent .sidebar-link:hover {
+  background: #fff;
+  color: var(--mint-deep);
+}
+
+.portal-agent .page-header--wx {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: var(--spatial-blur);
+  -webkit-backdrop-filter: var(--spatial-blur);
+  border-bottom: 1px solid var(--spatial-border);
+  box-shadow: none;
+}
+
+.portal-agent .page-header--wx h2 {
+  color: var(--spatial-text);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.portal-agent .btn-text--wx {
+  color: var(--mint);
+  font-weight: 500;
+}
+
+.portal-agent .tabbar--mobile {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: var(--spatial-blur);
+  -webkit-backdrop-filter: var(--spatial-blur);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--spatial-shadow);
+}
+
+.portal-agent .tabbar-item {
+  color: var(--spatial-text-muted);
+}
+
+.portal-agent .tabbar-item.active {
+  color: var(--mint);
+}
+
+.portal-agent .tabbar-item.active i {
+  background: var(--mint-soft);
+  color: var(--mint);
+  box-shadow: none;
+}
+
+/* —— 页面氛围：克制、留白 —— */
+.portal-agent .page-body--wx-page,
+.portal-agent .page-body--wx-dash {
+  background: var(--spatial-bg);
+}
+
+.portal-agent .wx-scene__mesh {
+  opacity: 0.35;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(7, 193, 96, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 82% 78%, rgba(52, 211, 153, 0.08) 0%, transparent 42%);
+}
+
+.portal-agent .wx-scene__mesh::after {
+  display: none;
+}
+
+.portal-agent .wx-scene__orb {
+  filter: blur(64px);
+  opacity: 0.55;
+}
+
+.portal-agent .wx-scene__orb--1 {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(7, 193, 96, 0.2), transparent 70%);
+}
+
+.portal-agent .wx-scene__orb--2 {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(52, 211, 153, 0.16), transparent 70%);
+}
+
+.portal-agent .wx-scene__orb--3,
+.portal-agent .wx-scene__orb--4,
+.portal-agent .wx-scene__wave {
+  display: none;
+}
+
+.portal-agent .wx-stack {
+  gap: 20px;
+  padding: 0 16px;
+}
+
+/* —— 卡片：统一白瓷表面，绿色只作点缀 —— */
+.portal-agent .wx-elev {
+  background: var(--spatial-surface);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: var(--spatial-radius);
+  box-shadow: var(--spatial-shadow);
+}
+
+.portal-agent .wx-elev::after {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.08) 40%,
+    transparent 70%
+  );
+}
+
+.portal-agent .wx-elev--hero,
+.portal-agent .wx-elev--stats,
+.portal-agent .wx-elev--menu,
+.portal-agent .wx-elev--status,
+.portal-agent .wx-elev--panel,
+.portal-agent .wx-elev--notice,
+.portal-agent .wx-elev--detail {
+  background: var(--spatial-surface);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: var(--spatial-shadow);
+}
+
+.portal-agent .wx-elev--hero::before,
+.portal-agent .wx-elev--stats::before,
+.portal-agent .wx-elev--menu::before,
+.portal-agent .wx-elev--status::before {
+  display: none;
+}
+
+.portal-agent .wx-elev--hero {
+  border-left: 4px solid var(--mint);
+}
+
+.portal-agent .wx-elev--stats::after,
+.portal-agent .wx-elev--menu::after,
+.portal-agent .wx-elev--status::after {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.4) 0%, transparent 55%);
+}
+
+.portal-agent .wx-profile::after {
+  background: radial-gradient(circle at 95% 10%, rgba(7, 193, 96, 0.06), transparent 50%);
+}
+
+@media (min-width: 768px) {
+  .portal-agent .wx-elev:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--spatial-shadow-hover);
+  }
+}
+
+/* —— 首页 Hero —— */
+.portal-agent .wx-profile__avatar {
+  border-radius: 16px;
+  background: linear-gradient(145deg, var(--mint-light), var(--mint));
+  box-shadow: 0 8px 20px var(--mint-glow);
+}
+
+.portal-agent .wx-profile__name {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--spatial-text);
+}
+
+.portal-agent .wx-profile__meta {
+  color: var(--spatial-text-sub);
+  opacity: 1;
+}
+
+.portal-agent .wx-profile__badge.is-on {
+  background: var(--mint-soft);
+  color: var(--mint-deep);
+  border: 1px solid rgba(7, 193, 96, 0.2);
+  box-shadow: none;
+}
+
+/* —— 数据概览 —— */
+.portal-agent .wx-group__label {
+  color: var(--spatial-text-sub);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 16px;
+}
+
+.portal-agent .wx-group__dot {
+  background: var(--mint);
+  box-shadow: none;
+  width: 6px;
+  height: 6px;
+}
+
+.portal-agent .wx-stat-row {
+  margin: 0 12px 14px;
+  padding: 12px 8px;
+  background: var(--spatial-bg-soft);
+  border: 1px solid var(--spatial-border);
+  border-radius: var(--spatial-radius-sm);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.portal-agent .wx-stat__ico {
+  background: var(--mint-soft);
+  color: var(--mint);
+  box-shadow: none;
+}
+
+.portal-agent .wx-stat:nth-child(2) .wx-stat__ico,
+.portal-agent .wx-stat:nth-child(3) .wx-stat__ico,
+.portal-agent .wx-stat:nth-child(4) .wx-stat__ico {
+  background: var(--mint-soft);
+  color: var(--mint);
+}
+
+.portal-agent .wx-stat__value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--spatial-text);
+  text-shadow: none;
+}
+
+.portal-agent .wx-stat__label {
+  color: var(--spatial-text-sub);
+}
+
+.portal-agent .wx-stat + .wx-stat::before {
+  background: var(--spatial-border);
+}
+
+/* —— 列表 Cell —— */
+.portal-agent .wx-cell__icon,
+.portal-agent .wx-elev--menu .wx-cell:nth-child(n) .wx-cell__icon,
+.portal-agent .wx-elev--status .wx-cell:nth-child(n) .wx-cell__icon,
+.portal-agent .wx-elev--panel .wx-cell__icon,
+.portal-agent .wx-elev--detail .wx-cell__icon {
+  background: var(--mint-soft);
+  color: var(--mint);
+  box-shadow: none;
+}
+
+.portal-agent .wx-cell__title {
+  font-weight: 500;
+  color: var(--spatial-text);
+}
+
+.portal-agent .wx-cell__desc {
+  color: var(--spatial-text-sub);
+}
+
+.portal-agent .wx-cell__value {
+  color: var(--spatial-text-sub);
+  font-weight: 400;
+}
+
+.portal-agent .wx-cell__badge,
+.portal-agent .wx-group__count {
+  background: var(--mint);
+  box-shadow: none;
+}
+
+.portal-agent .wx-cell::after {
+  background: var(--spatial-border);
+  left: 64px;
+}
+
+.portal-agent .wx-cell:active {
+  background: rgba(0, 0, 0, 0.03);
+  transform: none;
+}
+
+.portal-agent .wx-cell__arrow {
+  color: var(--spatial-text-muted);
+}
+
+/* —— 公告 / 空状态 / 菜单网格 —— */
+.portal-agent .wx-notice {
+  border-left: 3px solid var(--mint);
+  border-image: none;
+}
+
+.portal-agent .wx-notice__head {
+  color: var(--spatial-text);
+}
+
+.portal-agent .wx-elev .group-empty__ico,
+.portal-agent .wx-menu-card__ico {
+  background: linear-gradient(145deg, var(--mint-light), var(--mint));
+  box-shadow: 0 4px 12px var(--mint-glow);
+}
+
+.portal-agent .wx-menu-card {
+  background: var(--spatial-surface-solid);
+  border: 1px solid var(--spatial-border);
+  box-shadow: var(--spatial-shadow);
+}
+
+.portal-agent .wx-elev .agent-cred-list,
+.portal-agent .wx-elev .group-empty,
+.portal-agent .wx-elev .bot-list {
+  background: var(--spatial-bg-soft);
+  border: 1px solid var(--spatial-border);
+  box-shadow: none;
+}
+
+/* —— 通用卡片 / Bot 列表 —— */
+.portal-agent .card,
+.portal-agent .stat-card,
+.portal-agent .mod-card,
+.portal-agent .info-banner {
+  background: var(--spatial-surface);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: var(--spatial-shadow);
+}
+
+.portal-agent .info-banner {
+  background: var(--spatial-surface);
+}
+
+.portal-agent .toast {
+  background: rgba(29, 29, 31, 0.88);
+  border-radius: var(--spatial-radius-sm);
+}

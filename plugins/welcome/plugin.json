@@ -1,0 +1,8 @@
+{
+  "id": "welcome",
+  "name": "欢迎",
+  "version": "0.1.0",
+  "description": "新人进群自动发送欢迎语",
+  "enabled": true,
+  "main": "dist/index.js"
+}

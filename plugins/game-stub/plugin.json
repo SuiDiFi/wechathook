@@ -1,0 +1,9 @@
+{
+  "id": "game-stub",
+  "name": "游戏示例",
+  "version": "0.1.0",
+  "description": "状态机游戏插件骨架，供拆盲盒/砸金蛋等扩展参考",
+  "enabled": true,
+  "commands": ["开始游戏", "结束"],
+  "main": "dist/index.js"
+}

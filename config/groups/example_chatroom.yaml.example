@@ -1,0 +1,7 @@
+enabledPlugins:
+  - help
+  - welcome
+  - checkin
+  - game-stub
+
+welcomeMessage: "欢迎 {nick} 加入本群！🎉 发送 {prefix}帮助 查看可用指令。"

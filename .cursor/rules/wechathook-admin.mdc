@@ -1,0 +1,17 @@
+---
+description: B-Admin 窗口 — 萌兔 UI、srcGet/srcPost、plugin-config
+globs: apps/admin/**,packages/plugin-config/**,data/**
+alwaysApply: false
+---
+
+# B-Admin 边界
+
+**职责：** 萌兔 H5、`/api/Agent/srcGet|srcPost`、overrides 写入、总控 `/console`。
+
+**可改：** `apps/admin/**`、`packages/plugin-config/**`、`data/agent-overrides/**`
+
+**禁止：** rabbitr、gateway 出站、inject、自建 agent SPA。
+
+**契约：** `docs/development/contracts/admin-bot.md`
+
+**验证：** `pnpm sync:mengtu-static && pnpm --filter @wechathook/admin build && pnpm e2e:sign-alignment`

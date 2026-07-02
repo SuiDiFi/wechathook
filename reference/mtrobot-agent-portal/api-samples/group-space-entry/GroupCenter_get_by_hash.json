@@ -1,0 +1,22 @@
+{
+  "status": 1,
+  "data": {
+    "group_info": {
+      "id": 141845,
+      "nickname": "",
+      "wxid": "57226609398@chatroom",
+      "headimgurl": "",
+      "is_expires": false,
+      "expires_time": "2026年07月26日 04时55分38秒",
+      "extension_code": "",
+      "content_str": "",
+      "content_img": "",
+      "entry": true,
+      "product": "月卡",
+      "touch": "",
+      "is_close": false,
+      "is_check": 0
+    }
+  },
+  "message": "成功"
+}

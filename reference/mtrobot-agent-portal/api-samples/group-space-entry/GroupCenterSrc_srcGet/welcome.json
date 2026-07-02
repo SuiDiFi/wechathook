@@ -1,0 +1,169 @@
+{
+  "status": 1,
+  "data": {
+    "title": "欢迎语设置",
+    "notice": "欢迎语设置",
+    "comment": "奖励可输入函数如=[邀请有效人数]*0.5+10",
+    "form": [
+      {
+        "type": "switch",
+        "label": "功能开关",
+        "name": "switch_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "欢迎语音开关",
+        "name": "voice_checked",
+        "value": true
+      },
+      {
+        "type": "radio",
+        "label": "语音欢迎方式选择",
+        "name": "voice_method",
+        "value": "1",
+        "select": {
+          "1": "语音欢迎",
+          "2": "音乐卡片",
+          "3": "备用语音欢迎"
+        }
+      },
+      {
+        "type": "words",
+        "label": "添加欢迎语",
+        "name": "words",
+        "list": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": false
+          },
+          {
+            "type": "textarea",
+            "label": "内容",
+            "placeholder": "内容",
+            "name": "content",
+            "rows": 3,
+            "value": "",
+            "tag": {
+              "昵称": "[昵称]",
+              "群名": "[群名]",
+              "换行": "[换行]",
+              "剩余金币": "[剩余金币]",
+              "剩余钻石": "[剩余钻石]",
+              "剩余魅力": "[剩余魅力]",
+              "邀请人": "[邀请人]",
+              "有效邀请人数": "[有效邀请人数]",
+              "邀请人奖励钻石": "[邀请人奖励钻石]",
+              "邀请人奖励金币": "[邀请人奖励金币]",
+              "邀请人奖励魅力": "[邀请人奖励魅力]",
+              "邀请人wxid": "[邀请人wxid]",
+              "进群人wxid": "[进群人wxid]"
+            },
+            "exempt": true
+          }
+        ],
+        "value": [
+          {
+            "switch_checked": true,
+            "content": "@[昵称] \n哈喽小哥哥小姐姐～\n       俺是本群小管家\n         要要要～切克闹～\n             欢迎你来到[群名]～\n    愿世界美好与你环环相扣～\n-------------------\n \n本群群规如下:\n文明发言，严禁黄赌毒，禁止发广告，禁止刷屏，禁止辱骂群友，团结友善，开心聊天。\n违反群规送单程票一张\n【想找宝宝玩游戏的话发 菜单 就行哦】",
+            "pic": ""
+          }
+        ]
+      },
+      {
+        "type": "words",
+        "label": "添加链接",
+        "name": "link",
+        "list": [
+          {
+            "type": "switch",
+            "label": "功能开关",
+            "name": "switch_checked",
+            "value": false
+          },
+          {
+            "type": "textarea",
+            "label": "标题",
+            "placeholder": "标题",
+            "name": "title",
+            "rows": 1,
+            "value": "",
+            "tag": {
+              "昵称": "[昵称]",
+              "群名": "[群名]"
+            }
+          },
+          {
+            "type": "textarea",
+            "label": "内容",
+            "placeholder": "内容",
+            "name": "content",
+            "rows": 3,
+            "value": "",
+            "tag": {
+              "昵称": "[昵称]",
+              "群名": "[群名]",
+              "换行": "[换行]",
+              "剩余金币": "[剩余金币]",
+              "剩余钻石": "[剩余钻石]",
+              "剩余魅力": "[剩余魅力]",
+              "邀请人": "[邀请人]",
+              "有效邀请人数": "[有效邀请人数]",
+              "邀请人奖励钻石": "[邀请人奖励钻石]",
+              "邀请人奖励金币": "[邀请人奖励金币]",
+              "邀请人奖励魅力": "[邀请人奖励魅力]",
+              "邀请人wxid": "[邀请人wxid]",
+              "进群人wxid": "[进群人wxid]"
+            }
+          }
+        ],
+        "value": [
+          {
+            "switch_checked": true,
+            "title": "欢迎新人 [昵称] 进群",
+            "content": "邀请人:[邀请人]\n有效邀请人数:[有效邀请人数]\n右边是新人头像哦！",
+            "url": "http://baidu.com/"
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "新人头像链接",
+        "name": "url",
+        "placeholder": "请输入链接",
+        "value": "https://weixin.qq.com/",
+        "max": 180
+      },
+      {
+        "type": "number",
+        "label": "邀请人钻石奖励",
+        "name": "jifen",
+        "placeholder": "请输入钻石奖励数量",
+        "rows": 1,
+        "value": "",
+        "max": 180
+      },
+      {
+        "type": "number",
+        "label": "邀请人金币奖励",
+        "name": "jinbi",
+        "placeholder": "请输入金币奖励数量",
+        "rows": 1,
+        "value": "",
+        "max": 180
+      },
+      {
+        "type": "number",
+        "label": "邀请人魅力奖励",
+        "name": "meili",
+        "placeholder": "请输入魅力奖励数量",
+        "rows": 1,
+        "value": "",
+        "max": 180
+      }
+    ]
+  },
+  "message": "成功"
+}

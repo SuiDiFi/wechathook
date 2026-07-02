@@ -1,0 +1,83 @@
+{
+  "status": 1,
+  "data": {
+    "title": "超级渔场",
+    "notice": "",
+    "comment": "<p>比如:超级渔场</p>",
+    "form": [
+      {
+        "type": "checkbox",
+        "label": "本群鱼种",
+        "name": "kinds",
+        "direction": "horizontal",
+        "value": [
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "select": {
+          "8": "白条",
+          "9": "鳑鲏",
+          "10": "麦穗",
+          "11": "罗非鱼",
+          "12": "清道夫"
+        },
+        "default": [
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "type": "input",
+        "label": "白条（金币价值）",
+        "name": "group_fish_8",
+        "placeholder": "输入金币数量",
+        "value": 1,
+        "max": 10000000,
+        "min": 1
+      },
+      {
+        "type": "input",
+        "label": "鳑鲏（钻石价值）",
+        "name": "group_fish_9",
+        "placeholder": "输入钻石数量",
+        "value": 1,
+        "max": 10000000,
+        "min": 1
+      },
+      {
+        "type": "input",
+        "label": "麦穗（魅力价值）",
+        "name": "group_fish_10",
+        "placeholder": "输入魅力数量",
+        "value": 1,
+        "max": 10000000,
+        "min": 1
+      },
+      {
+        "type": "input",
+        "label": "罗非鱼（身价价值）",
+        "name": "group_fish_11",
+        "placeholder": "输入身价数量",
+        "value": 1,
+        "max": 10000000,
+        "min": 1
+      },
+      {
+        "type": "input",
+        "label": "清道夫（恩爱价值）",
+        "name": "group_fish_12",
+        "placeholder": "输入恩爱数量",
+        "value": 1,
+        "max": 10000000,
+        "min": 1
+      }
+    ]
+  },
+  "message": "成功"
+}

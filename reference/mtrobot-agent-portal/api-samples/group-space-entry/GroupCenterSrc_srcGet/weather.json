@@ -1,0 +1,87 @@
+{
+  "status": 1,
+  "data": {
+    "title": "天气播报",
+    "notice": "设置播报地区",
+    "comment": "<p>天气预回复 地区+天气 比如 深圳天气</p>",
+    "form": [
+      {
+        "type": "switch",
+        "label": "功能开关",
+        "name": "switch_checked",
+        "value": true
+      },
+      {
+        "type": "switch",
+        "label": "定时开关",
+        "name": "delay_checked",
+        "value": false
+      },
+      {
+        "type": "radio",
+        "label": "时间选择",
+        "name": "today_select",
+        "value": "1",
+        "select": {
+          "1": "今日天气",
+          "2": "一周天气"
+        }
+      },
+      {
+        "type": "textarea",
+        "label": "地区",
+        "name": "city",
+        "placeholder": "如:厦门",
+        "rows": 1,
+        "tag": {
+          "分隔符": "[分隔符]"
+        },
+        "value": "",
+        "max": 180,
+        "exempt": true
+      },
+      {
+        "type": "time",
+        "label": "播报时间",
+        "placeholder": "选择时间",
+        "name": "current_time",
+        "show": false,
+        "value": ""
+      },
+      {
+        "type": "checkbox",
+        "label": "播报日期",
+        "name": "week",
+        "direction": "horizontal",
+        "value": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "select": [
+          "星期日",
+          "星期一",
+          "星期二",
+          "星期三",
+          "星期四",
+          "星期五",
+          "星期六"
+        ],
+        "default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  "message": "成功"
+}

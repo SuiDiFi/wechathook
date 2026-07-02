@@ -1,0 +1,54 @@
+{
+  "extractedAt": "2026-06-26T03:30:18.084Z",
+  "sourceLog": "C:\\Users\\along\\AppData\\Local\\com.admin.MTRobot\\logs\\MTRobot-2026-06-26.log",
+  "kernelModes": [
+    "inject"
+  ],
+  "rabbitrEndpoints": [
+    {
+      "path": "/r/sqe",
+      "sampleParams": {
+        "db": "contact.db",
+        "sq": "SELECT nick_name, username, remark, small_head_url FROM contact WHERE username LIKE '%chatroom%' AND delete_flag !=1 AND is_in_chat_room ==1;"
+      },
+      "count": 6
+    },
+    {
+      "path": "/r/gpc",
+      "sampleParams": {},
+      "count": 1
+    },
+    {
+      "path": "/r/stm",
+      "sampleParams": {
+        "t": "57226609398@chatroom",
+        "c": "✨【群ID：57226609398】\n✨套餐类型:月卡\n✨群有效期至:2026-07-26 04:55:38\n✨版本说明:30天有效期\n✨主人:大太阳\n✨编号:141845\n✨可发送“菜单”查询对应功能。"
+      },
+      "count": 2
+    },
+    {
+      "path": "/r/gfl",
+      "sampleParams": {},
+      "count": 1
+    },
+    {
+      "path": "/r/grm",
+      "sampleParams": {
+        "r": "57226609398@chatroom"
+      },
+      "count": 1
+    }
+  ],
+  "handleMessagecallbackMsgTypes": [
+    1,
+    16,
+    19,
+    50
+  ],
+  "notes": {
+    "sendText": "POST /r/stm { t: roomId, c: content }",
+    "sqlQuery": "POST /r/sqe { db, sq }",
+    "httpPort": 19088,
+    "wechatVersion": "4.1.9.55"
+  }
+}

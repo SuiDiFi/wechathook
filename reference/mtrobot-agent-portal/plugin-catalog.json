@@ -1,0 +1,1565 @@
+{
+  "plugins": [
+    {
+      "id": "sign",
+      "label": "签到"
+    },
+    {
+      "id": "dsmh_dashang",
+      "label": "打赏"
+    },
+    {
+      "id": "dsmh_smear",
+      "label": "抹黑"
+    },
+    {
+      "id": "song",
+      "label": "点歌"
+    },
+    {
+      "id": "guessfirst",
+      "label": "抢答"
+    },
+    {
+      "id": "news",
+      "label": "新闻"
+    },
+    {
+      "id": "fanyi",
+      "label": "翻译"
+    },
+    {
+      "id": "renpin",
+      "label": "人品"
+    },
+    {
+      "id": "peidui",
+      "label": "配对"
+    },
+    {
+      "id": "zhaocha",
+      "label": "找茬"
+    },
+    {
+      "id": "dajie",
+      "label": "打劫"
+    },
+    {
+      "id": "dajie_despoil",
+      "label": "劫色"
+    },
+    {
+      "id": "liwu",
+      "label": "礼物"
+    },
+    {
+      "id": "qinghua",
+      "label": "情话"
+    },
+    {
+      "id": "chuanye",
+      "label": "创业"
+    },
+    {
+      "id": "partner",
+      "label": "结婚"
+    },
+    {
+      "id": "partner_child",
+      "label": "宝宝"
+    },
+    {
+      "id": "partner_yuehui",
+      "label": "约会"
+    },
+    {
+      "id": "partner_bihun",
+      "label": "逼婚"
+    },
+    {
+      "id": "partner_qianghun",
+      "label": "抢婚"
+    },
+    {
+      "id": "partner_dongfang",
+      "label": "洞房"
+    },
+    {
+      "id": "menpai",
+      "label": "门派"
+    },
+    {
+      "id": "baishi",
+      "label": "拜师"
+    },
+    {
+      "id": "harem",
+      "label": "后宫"
+    },
+    {
+      "id": "qian",
+      "label": "抽签"
+    },
+    {
+      "id": "reward",
+      "label": "抽奖"
+    },
+    {
+      "id": "sentence",
+      "label": "一言"
+    },
+    {
+      "id": "mycard",
+      "label": "名片"
+    },
+    {
+      "id": "head",
+      "label": "头衔"
+    },
+    {
+      "id": "crony",
+      "label": "好友"
+    },
+    {
+      "id": "flaunt",
+      "label": "炫富"
+    },
+    {
+      "id": "look_leg",
+      "label": "看腿"
+    },
+    {
+      "id": "xingzuo",
+      "label": "星座"
+    },
+    {
+      "id": "weather",
+      "label": "天气"
+    },
+    {
+      "id": "shop",
+      "label": "商城"
+    },
+    {
+      "id": "xiaoheiwu",
+      "label": "小黑屋"
+    },
+    {
+      "id": "nuli",
+      "label": "收小弟"
+    },
+    {
+      "id": "invita",
+      "label": "查邀请"
+    },
+    {
+      "id": "active",
+      "label": "查活跃"
+    },
+    {
+      "id": "guesstupian",
+      "label": "猜图片"
+    },
+    {
+      "id": "guesswangzhe",
+      "label": "猜王者"
+    },
+    {
+      "id": "guesshero",
+      "label": "猜英雄"
+    },
+    {
+      "id": "guessphrase",
+      "label": "猜成语"
+    },
+    {
+      "id": "guessmusic",
+      "label": "猜歌名"
+    },
+    {
+      "id": "riddle",
+      "label": "猜灯谜"
+    },
+    {
+      "id": "guessnumber",
+      "label": "猜数字"
+    },
+    {
+      "id": "leaderboard",
+      "label": "排行榜"
+    },
+    {
+      "id": "qiucaishen",
+      "label": "求财神"
+    },
+    {
+      "id": "xiaohua",
+      "label": "讲笑话"
+    },
+    {
+      "id": "jitang",
+      "label": "毒鸡汤"
+    },
+    {
+      "id": "baoxiang",
+      "label": "开宝箱"
+    },
+    {
+      "id": "boxes",
+      "label": "拆盲盒"
+    },
+    {
+      "id": "power",
+      "label": "正能量"
+    },
+    {
+      "id": "fch",
+      "label": "防撤回"
+    },
+    {
+      "id": "look_girl",
+      "label": "看美女"
+    },
+    {
+      "id": "look_boy",
+      "label": "看帅哥"
+    },
+    {
+      "id": "egg",
+      "label": "砸金蛋"
+    },
+    {
+      "id": "reply",
+      "label": "关键词"
+    },
+    {
+      "id": "play",
+      "label": "搜短剧"
+    },
+    {
+      "id": "richman",
+      "label": "大富翁"
+    },
+    {
+      "id": "gobang",
+      "label": "五子棋"
+    },
+    {
+      "id": "tarot",
+      "label": "塔罗牌"
+    },
+    {
+      "id": "cp",
+      "label": "查缘分"
+    },
+    {
+      "id": "backlist",
+      "label": "黑名单"
+    },
+    {
+      "id": "accounts",
+      "label": "记账簿"
+    },
+    {
+      "id": "chengyujielong",
+      "label": "成语接龙"
+    },
+    {
+      "id": "question",
+      "label": "巧思妙答"
+    },
+    {
+      "id": "son",
+      "label": "智能聊天"
+    },
+    {
+      "id": "son_more",
+      "label": "趣味语音"
+    },
+    {
+      "id": "xzpd",
+      "label": "星座配对"
+    },
+    {
+      "id": "sxpd",
+      "label": "生肖配对"
+    },
+    {
+      "id": "nuli_nlDG",
+      "label": "小弟打工"
+    },
+    {
+      "id": "mytest",
+      "label": "预测明年"
+    },
+    {
+      "id": "rename",
+      "label": "改名提醒"
+    },
+    {
+      "id": "baby",
+      "label": "超级宝宝"
+    },
+    {
+      "id": "immortal",
+      "label": "修仙问道"
+    },
+    {
+      "id": "farms",
+      "label": "超级农场"
+    },
+    {
+      "id": "fish_fishes",
+      "label": "超级钓鱼"
+    },
+    {
+      "id": "fish_ground",
+      "label": "超级渔场"
+    },
+    {
+      "id": "spirit",
+      "label": "精灵大陆"
+    },
+    {
+      "id": "idle",
+      "label": "咸鱼助手"
+    },
+    {
+      "id": "links_wz",
+      "label": "王者签到"
+    },
+    {
+      "id": "links_cj",
+      "label": "吃鸡签到"
+    },
+    {
+      "id": "links_sy",
+      "label": "手游登录"
+    },
+    {
+      "id": "links_gq",
+      "label": "歌曲下载"
+    },
+    {
+      "id": "search_combat",
+      "label": "王者战力"
+    },
+    {
+      "id": "search_history",
+      "label": "历史今天"
+    },
+    {
+      "id": "report",
+      "label": "整点报时"
+    },
+    {
+      "id": "search_outing",
+      "label": "王者出装"
+    },
+    {
+      "id": "welcome",
+      "label": "新人欢迎"
+    },
+    {
+      "id": "outmessage",
+      "label": "退群提醒"
+    },
+    {
+      "id": "tgrj",
+      "label": "舔狗日记"
+    },
+    {
+      "id": "cpdd",
+      "label": "cpdd"
+    },
+    {
+      "id": "greentea",
+      "label": "绿茶语录"
+    },
+    {
+      "id": "lowlove",
+      "label": "土味情话"
+    },
+    {
+      "id": "timereply",
+      "label": "定时发言"
+    },
+    {
+      "id": "noble",
+      "label": "贵族头衔"
+    },
+    {
+      "id": "treasure",
+      "label": "夺宝大战"
+    },
+    {
+      "id": "clock",
+      "label": "定时提醒"
+    },
+    {
+      "id": "present",
+      "label": "贵族礼物"
+    },
+    {
+      "id": "red",
+      "label": "红包统计"
+    },
+    {
+      "id": "bread",
+      "label": "面包功能"
+    },
+    {
+      "id": "analysis",
+      "label": "视频解析"
+    },
+    {
+      "id": "answer",
+      "label": "答案之书"
+    },
+    {
+      "id": "idiom",
+      "label": "疯狂成语"
+    },
+    {
+      "id": "tube",
+      "label": "护群管理"
+    },
+    {
+      "id": "arcade",
+      "label": "街机游戏"
+    }
+  ],
+  "count": 107,
+  "configs": [
+    {
+      "op": "accounts",
+      "title": "记账簿",
+      "fieldCount": 8,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "zdSel",
+        "zdContent",
+        "czSel",
+        "cdContent",
+        "jzSel",
+        "jzContent",
+        "rates"
+      ]
+    },
+    {
+      "op": "adverb",
+      "title": "副词",
+      "fieldCount": 22,
+      "hasSwitch": false,
+      "fieldNames": [
+        "打劫",
+        "劫色",
+        "创业",
+        "抽奖",
+        "砸金蛋",
+        "拆盲盒",
+        "查活跃",
+        "搜剧",
+        "整合#",
+        "总计#",
+        "清账#",
+        "账单",
+        "查账",
+        "设置管理员",
+        "取消管理员",
+        "设置超管",
+        "取消超管",
+        "踢",
+        "加入黑名单",
+        "所有人出黑名单"
+      ]
+    },
+    {
+      "op": "analysis",
+      "title": "视频解析设置",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "start_time",
+        "end_time",
+        "credit1",
+        "credit2"
+      ]
+    },
+    {
+      "op": "asetting",
+      "title": "配置",
+      "fieldCount": 2,
+      "hasSwitch": false,
+      "fieldNames": [
+        "limit",
+        "plug"
+      ]
+    },
+    {
+      "op": "baby",
+      "title": "生宝宝",
+      "fieldCount": 1,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked"
+      ]
+    },
+    {
+      "op": "backlist",
+      "title": "黑名单设置",
+      "fieldCount": 1,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked"
+      ]
+    },
+    {
+      "op": "baishi",
+      "title": "拜师设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "total",
+        "baishi_odds",
+        "beipan_odds"
+      ]
+    },
+    {
+      "op": "baoxiang",
+      "title": "开宝箱设置",
+      "fieldCount": 3,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "credit",
+        "chance"
+      ]
+    },
+    {
+      "op": "bot_name",
+      "title": "召唤语设置",
+      "fieldCount": 1,
+      "hasSwitch": false,
+      "fieldNames": [
+        "bot_name"
+      ]
+    },
+    {
+      "op": "boxes",
+      "title": "拆盲盒",
+      "fieldCount": 3,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "message",
+        "award_type"
+      ]
+    },
+    {
+      "op": "bread",
+      "title": "面包功能设置",
+      "fieldCount": 26,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "find_type",
+        "zs_gold_checked",
+        "zs_gold_min",
+        "zs_gold_max",
+        "zs_diamond_checked",
+        "zs_diamond_min",
+        "zs_diamond_max",
+        "sq_gold_checked",
+        "sq_gold_min",
+        "sq_gold_max",
+        "sq_diamond_checked",
+        "sq_diamond_min",
+        "sq_diamond_max",
+        "delay_time",
+        "total_person",
+        "zsg_price",
+        "zsg_gold_checked",
+        "zsg_gold_one",
+        "zsg_diamond_checked",
+        "zsg_diamond_one",
+        "sqg_gold_checked",
+        "sqg_gold_one",
+        "sqg_diamond_checked",
+        "sqg_diamond_one",
+        "g_content"
+      ]
+    },
+    {
+      "op": "call",
+      "title": "召唤客服设置",
+      "fieldCount": 3,
+      "hasSwitch": false,
+      "fieldNames": [
+        "content",
+        "url",
+        "list"
+      ]
+    },
+    {
+      "op": "chengyujielong",
+      "title": "成语接龙设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "chuanye",
+      "title": "创业设置",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "currency"
+      ]
+    },
+    {
+      "op": "cpdd",
+      "title": "cpdd",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "jb",
+        "jf",
+        "ml",
+        "start_time",
+        "end_time"
+      ]
+    },
+    {
+      "op": "crony",
+      "title": "好友设置",
+      "fieldCount": 5,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "party_credit1",
+        "brother",
+        "sisters",
+        "deduct_credit1"
+      ]
+    },
+    {
+      "op": "dajie",
+      "title": "打劫设置",
+      "fieldCount": 7,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "despoil_checked",
+        "out_time",
+        "odds",
+        "mp_checked",
+        "break_odds",
+        "proportion_odds"
+      ]
+    },
+    {
+      "op": "drop",
+      "title": "自动退群设置",
+      "fieldCount": 3,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "time",
+        "content"
+      ]
+    },
+    {
+      "op": "dsmh",
+      "title": "打赏设置",
+      "fieldCount": 5,
+      "hasSwitch": false,
+      "fieldNames": [
+        "dashang_checked",
+        "smear_checked",
+        "ds_sj",
+        "smear_sj",
+        "ds_odds"
+      ]
+    },
+    {
+      "op": "egg",
+      "title": "砸金蛋设置",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "message"
+      ]
+    },
+    {
+      "op": "exphint",
+      "title": "到期提示语",
+      "fieldCount": 2,
+      "hasSwitch": false,
+      "fieldNames": [
+        "customer",
+        "content"
+      ]
+    },
+    {
+      "op": "farms",
+      "title": "超级农场",
+      "fieldCount": 1,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked"
+      ]
+    },
+    {
+      "op": "fish",
+      "title": "超级渔场",
+      "fieldCount": 6,
+      "hasSwitch": false,
+      "fieldNames": [
+        "kinds",
+        "group_fish_8",
+        "group_fish_9",
+        "group_fish_10",
+        "group_fish_11",
+        "group_fish_12"
+      ]
+    },
+    {
+      "op": "flaunt",
+      "title": "炫富设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "credit2",
+        "credit1",
+        "cash"
+      ]
+    },
+    {
+      "op": "friend",
+      "title": "自动好友验证",
+      "fieldCount": 3,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "pass_name",
+        "wxid"
+      ]
+    },
+    {
+      "op": "gobang",
+      "title": "五子棋设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "start_time",
+        "end_time",
+        "credit1"
+      ]
+    },
+    {
+      "op": "greentea",
+      "title": "绿茶语录",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "jb",
+        "jf",
+        "ml",
+        "start_time",
+        "end_time"
+      ]
+    },
+    {
+      "op": "guessfirst",
+      "title": " 抢答设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "guesshero",
+      "title": "猜英雄设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "guessmusic",
+      "title": "猜歌名设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "guessnumber",
+      "title": "猜数字设置",
+      "fieldCount": 7,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "difficult",
+        "is_manage",
+        "start_time",
+        "end_time",
+        "credit1",
+        "credit2"
+      ]
+    },
+    {
+      "op": "guessphrase",
+      "title": "猜成语设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "guesstupian",
+      "title": "猜图片设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "guesswangzhe",
+      "title": "猜王者设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "harem",
+      "title": "后宫设置",
+      "fieldCount": 9,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "naq_checked",
+        "naq_jinbi",
+        "naq_meili",
+        "naq_nums",
+        "siq_odds",
+        "forces_jinbi",
+        "forces_odds",
+        "tlhg_odds"
+      ]
+    },
+    {
+      "op": "idiom",
+      "title": "疯狂成语设置",
+      "fieldCount": 7,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "difficult",
+        "is_manage",
+        "start_time",
+        "end_time",
+        "credit1",
+        "credit2"
+      ]
+    },
+    {
+      "op": "invita",
+      "title": "邀请设置",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "content"
+      ]
+    },
+    {
+      "op": "liwu",
+      "title": "礼物设置",
+      "fieldCount": 1,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked"
+      ]
+    },
+    {
+      "op": "lowlove",
+      "title": "土味情话",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "jb",
+        "jf",
+        "ml",
+        "start_time",
+        "end_time"
+      ]
+    },
+    {
+      "op": "menpai",
+      "title": "门派设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "chuangli",
+        "gaiming",
+        "shengji"
+      ]
+    },
+    {
+      "op": "menu",
+      "title": "菜单设置",
+      "fieldCount": 5,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "type",
+        "message",
+        "agent_content",
+        "content"
+      ]
+    },
+    {
+      "op": "mycard",
+      "title": "名片设置",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "card"
+      ]
+    },
+    {
+      "op": "noble",
+      "title": "股东/贵族设置",
+      "fieldCount": 7,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "out_report",
+        "open_credit",
+        "black_house",
+        "is_nuli",
+        "is_harem",
+        "message"
+      ]
+    },
+    {
+      "op": "nuli",
+      "title": "小弟设置",
+      "fieldCount": 11,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "nlDG_checked",
+        "ismanager_checked",
+        "shounujia",
+        "pt_odds",
+        "ss_number",
+        "slave_max",
+        "pt_jinbi",
+        "dg_num1",
+        "dg_num2",
+        "sj_odds"
+      ]
+    },
+    {
+      "op": "outmessage",
+      "title": "退群语设置",
+      "fieldCount": 7,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "words",
+        "link",
+        "url",
+        "jifen",
+        "jinbi",
+        "meili"
+      ]
+    },
+    {
+      "op": "partner",
+      "title": "婚姻玩法",
+      "fieldCount": 25,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "yuehui_checked",
+        "bihun_checked",
+        "qianghun_checked",
+        "dongfang_checked",
+        "child_checked",
+        "childwork_checked",
+        "child_work",
+        "lihunzheng",
+        "bh_odds",
+        "th_odds",
+        "qh_odds",
+        "df_odds",
+        "yh_odds",
+        "hy_odds",
+        "yh_jinbi",
+        "yh_meili",
+        "yh_int",
+        "qh_meili",
+        "th_jinbi",
+        "df_int",
+        "marry_checked",
+        "music_checked",
+        "content",
+        "ask_content"
+      ]
+    },
+    {
+      "op": "password",
+      "title": "改密码设置",
+      "fieldCount": 1,
+      "hasSwitch": false,
+      "fieldNames": [
+        "password"
+      ]
+    },
+    {
+      "op": "peidui",
+      "title": "配对设置",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "pd_odds"
+      ]
+    },
+    {
+      "op": "power",
+      "title": "正能量",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "jb",
+        "jf",
+        "ml",
+        "start_time",
+        "end_time"
+      ]
+    },
+    {
+      "op": "present",
+      "title": "贵族礼物",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "owner_checked"
+      ]
+    },
+    {
+      "op": "qian",
+      "title": "抽签解签",
+      "fieldCount": 11,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "chou_jb",
+        "chou_jf",
+        "chou_ml",
+        "chou_start_time",
+        "chou_end_time",
+        "jie_jb",
+        "jie_jf",
+        "jie_ml",
+        "jie_start_time",
+        "jie_end_time"
+      ]
+    },
+    {
+      "op": "qiucaishen",
+      "title": "求财神设置",
+      "fieldCount": 3,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "question",
+      "title": "巧思妙答",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "ratelimit",
+      "title": "消息限制设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "range",
+        "limit",
+        "time"
+      ]
+    },
+    {
+      "op": "rename",
+      "title": "改名提醒",
+      "fieldCount": 5,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "type",
+        "title",
+        "notice",
+        "ext"
+      ]
+    },
+    {
+      "op": "renpin",
+      "title": "人品设置",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "rp_odds"
+      ]
+    },
+    {
+      "op": "reply",
+      "title": "关键词回复",
+      "fieldCount": 9,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "text_checked",
+        "text_keyword",
+        "idcard_checked",
+        "idcard_keyword",
+        "link_checked",
+        "link_keyword",
+        "mini_checked",
+        "mini_keyword"
+      ]
+    },
+    {
+      "op": "reward",
+      "title": "抽奖",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "message"
+      ]
+    },
+    {
+      "op": "riddle",
+      "title": "猜灯谜",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    },
+    {
+      "op": "risk",
+      "title": "风险防控",
+      "fieldCount": 35,
+      "hasSwitch": false,
+      "fieldNames": [
+        "ZK_version_checked",
+        "month_version_checked",
+        "quarter_version_checked",
+        "half_version_checked",
+        "year_version_checked",
+        "zhong_version_checked",
+        "JCZK_version_checked",
+        "JCYK_version_checked",
+        "JCJK_version_checked",
+        "JCBNK_version_checked",
+        "JCNK_version_checked",
+        "JCZSBNK_version_checked",
+        "JCZZ_version_checked",
+        "JCGJ_version_checked",
+        "JCCJ_version_checked",
+        "ZZ_version_checked",
+        "ZZZK_version_checked",
+        "ZZYK_version_checked",
+        "ZZJK_version_checked",
+        "ZZBNK_version_checked",
+        "ZZNK_version_checked",
+        "ZZZSBNK_version_checked",
+        "GJ_version_checked",
+        "CJ_version_checked",
+        "DZZK_version_checked",
+        "DZYK_version_checked",
+        "DZJK_version_checked",
+        "DZBNK_version_checked",
+        "DZNK_version_checked",
+        "DZZSNK_version_checked",
+        "auto_close_checked",
+        "cont",
+        "rename_open_checked",
+        "auto_open_checked",
+        "notice_customer_checked"
+      ]
+    },
+    {
+      "op": "robotinto",
+      "title": "自动进群设置",
+      "fieldCount": 5,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "type",
+        "er_type",
+        "invita_content",
+        "erwm_content"
+      ]
+    },
+    {
+      "op": "search",
+      "title": "查询功能",
+      "fieldCount": 3,
+      "hasSwitch": false,
+      "fieldNames": [
+        "outing_checked",
+        "combat_checked",
+        "history_checked"
+      ]
+    },
+    {
+      "op": "sensitive",
+      "title": "风险词设置",
+      "fieldCount": 3,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "message",
+        "prohibit"
+      ]
+    },
+    {
+      "op": "sentence",
+      "title": "一言",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "jb",
+        "jf",
+        "ml",
+        "start_time",
+        "end_time"
+      ]
+    },
+    {
+      "op": "service",
+      "title": "联系客服设置",
+      "fieldCount": 3,
+      "hasSwitch": false,
+      "fieldNames": [
+        "content",
+        "url",
+        "list"
+      ]
+    },
+    {
+      "op": "sign",
+      "title": "签到设置",
+      "fieldCount": 7,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "sign_content",
+        "message",
+        "min_jb",
+        "max_jb",
+        "min_jf",
+        "max_jf"
+      ]
+    },
+    {
+      "op": "son",
+      "title": "智能聊天设置",
+      "fieldCount": 7,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "more_checked",
+        "voice",
+        "model",
+        "short_message",
+        "ai_message",
+        "per"
+      ]
+    },
+    {
+      "op": "song",
+      "title": "点歌设置",
+      "fieldCount": 2,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "music"
+      ]
+    },
+    {
+      "op": "srclimit",
+      "title": "插件限制设置",
+      "fieldCount": 62,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "limit",
+        "liwu_user",
+        "chuanye_user",
+        "dsmh_user_dashang",
+        "dsmh_user_smear",
+        "dajie_user_plunder",
+        "dajie_user_despoil",
+        "qiucaishen_user",
+        "baoxiang_user",
+        "guesstupian",
+        "zhaocha",
+        "guessmusic",
+        "guesswangzhe",
+        "guesshero",
+        "guessphrase",
+        "guessfirst",
+        "guessnumber",
+        "nuli_user_DXCH",
+        "partner_user_bihun",
+        "partner_user_qianghun",
+        "partner_user_taohun",
+        "partner_user_dongfang",
+        "partner_user_yuehui",
+        "harem_user_forces",
+        "harem_user_naq",
+        "harem_user_siq",
+        "harem_user_tlhg",
+        "chengyujielong",
+        "qian_user",
+        "reward_user",
+        "boxes_user",
+        "cpdd_user",
+        "sentence_user",
+        "noble_user",
+        "lowlove_user",
+        "greentea_user",
+        "power_user",
+        "baishi_user_tdZRW",
+        "menpai_shenJi",
+        "menpai_juanZeng",
+        "nuli_user_shounu",
+        "nuli_user_pantao",
+        "fch",
+        "treasure",
+        "treasure_user_snatch",
+        "crony_user_fight",
+        "crony_user_party",
+        "crony_user_become",
+        "flaunt_cancel",
+        "egg_user_smashed",
+        "clock_user_person",
+        "clock_user_crowd",
+        "play_user_search",
+        "question",
+        "riddle",
+        "present_user",
+        "tarot_user",
+        "cp_user",
+        "answer_user",
+        "idiom",
+        "active"
+      ]
+    },
+    {
+      "op": "tgrj",
+      "title": "舔狗日记",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "jb",
+        "jf",
+        "ml",
+        "start_time",
+        "end_time"
+      ]
+    },
+    {
+      "op": "treasure",
+      "title": "夺宝大战",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "identity",
+        "treasure_jb",
+        "treasure_jf",
+        "treasure_odds",
+        "is_limit"
+      ]
+    },
+    {
+      "op": "tube",
+      "title": "护群管理",
+      "fieldCount": 9,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "switch_list",
+        "keyword",
+        "warn_count",
+        "warn_content",
+        "tube_content",
+        "black_checked",
+        "speak_count",
+        "exit_black"
+      ]
+    },
+    {
+      "op": "weather",
+      "title": "天气播报",
+      "fieldCount": 6,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "delay_checked",
+        "today_select",
+        "city",
+        "current_time",
+        "week"
+      ]
+    },
+    {
+      "op": "welcome",
+      "title": "欢迎语设置",
+      "fieldCount": 9,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "voice_checked",
+        "voice_method",
+        "words",
+        "link",
+        "url",
+        "jifen",
+        "jinbi",
+        "meili"
+      ]
+    },
+    {
+      "op": "welfare",
+      "title": "主人奖励",
+      "fieldCount": 30,
+      "hasSwitch": false,
+      "fieldNames": [
+        "ZK_version",
+        "month_version",
+        "quarter_version",
+        "half_version",
+        "year_version",
+        "zhong_version",
+        "JCZK_version",
+        "JCYK_version",
+        "JCJK_version",
+        "JCBNK_version",
+        "JCNK_version",
+        "JCZSBNK_version",
+        "JCZZ_version",
+        "JCGJ_version",
+        "JCCJ_version",
+        "ZZ_version",
+        "ZZZK_version",
+        "ZZYK_version",
+        "ZZJK_version",
+        "ZZBNK_version",
+        "ZZNK_version",
+        "ZZZSBNK_version",
+        "GJ_version",
+        "CJ_version",
+        "DZZK_version",
+        "DZYK_version",
+        "DZJK_version",
+        "DZBNK_version",
+        "DZNK_version",
+        "DZZSNK_version"
+      ]
+    },
+    {
+      "op": "xingzuo",
+      "title": "查星座设置",
+      "fieldCount": 1,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked"
+      ]
+    },
+    {
+      "op": "zhaocha",
+      "title": "找茬设置",
+      "fieldCount": 4,
+      "hasSwitch": true,
+      "fieldNames": [
+        "switch_checked",
+        "is_manage",
+        "min_gold",
+        "max_gold"
+      ]
+    }
+  ]
+}

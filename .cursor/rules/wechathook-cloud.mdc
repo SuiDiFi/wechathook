@@ -1,0 +1,17 @@
+---
+description: A-Cloud 窗口 — bot-server、bot-core super、plugins
+globs: apps/bot-server/**,packages/bot-core/**,plugins/**
+alwaysApply: false
+---
+
+# A-Cloud 边界
+
+**职责：** `/super/msg/*`、SignEngine/MenuEngine、插件、SQLite。
+
+**可改：** `apps/bot-server`、`packages/bot-core/src/super/**`、`plugins/*`
+
+**禁止：** `apps/admin/**`、`apps/gateway/**`、`hook-adapter`、萌兔静态、inject 脚本。
+
+**契约：** `docs/development/contracts/super-api.md`、`config-priority.md`
+
+**验证：** `pnpm --filter @wechathook/bot-core build && pnpm e2e:mvp`

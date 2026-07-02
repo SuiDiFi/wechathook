@@ -1,0 +1,28 @@
+{
+  "menu": [
+    {
+      "title": "基本配置",
+      "list": [
+        { "title": "默认插件", "icon": "apps-o", "to": "/agent-src-asetting" },
+        { "title": "到期提示语", "icon": "chat-o", "to": "/agent-src-exphint" },
+        { "title": "签到", "icon": "like-o", "to": "/agent-src-sign" },
+        { "title": "关键词回复", "icon": "smile-comment-o", "to": "/agent-src-reply" },
+        { "title": "菜单设置", "icon": "label-o", "to": "/agent-src-menu" }
+      ]
+    },
+    {
+      "title": "模板管理",
+      "list": [
+        { "title": "欢迎语设置", "icon": "chat-o", "to": "/agent-src-welcome" }
+      ]
+    },
+    {
+      "title": "版本管理",
+      "list": [
+        { "title": "同步群功能开关", "icon": "singout-o", "to": "/agent-codes-setting" },
+        { "title": "群空间入口配置", "icon": "chat-o", "to": "/agent-codes-entry" },
+        { "title": "激活码列表", "icon": "label-o", "to": "/agent-codes-list" }
+      ]
+    }
+  ]
+}

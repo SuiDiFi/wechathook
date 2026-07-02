@@ -1,0 +1,36 @@
+---
+description: wechathook 集成会话规则 — 多 Agent 汇总、契约与闸门
+alwaysApply: true
+---
+
+# wechathook 集成层
+
+## 会话角色
+
+- **G-Integration（本会话默认）**：合并分支、跑 `pnpm contracts`、更新 `docs/development/CURRENT.md`
+- 功能窗口只做单一边界，见 `CURRENT.md` §3
+
+## 开任务前必读
+
+1. `docs/development/CURRENT.md`
+2. `docs/development/contracts/README.md`
+3. 相关 `contracts/*.md`
+
+## 硬约束
+
+- 总代 UI：**萌兔官方 SPA**，禁止重建 `apps/admin/public/agent/` 自建 SPA（除非用户明确要求）
+- 配置优先级：群覆盖 > `data/agent-overrides/` > 归档 JSON > yaml 兜底
+- 改萌兔静态后必跑 `pnpm sync:mengtu-static` 并重启 admin
+- 改 `plugin-config` / `bot-core` 后 build 对应包并重启 bot-server
+
+## 合并前闸门
+
+```powershell
+pnpm build
+pnpm contracts
+pnpm e2e:mvp
+```
+
+## 交卷
+
+功能窗口完成里程碑后，按 `docs/development/contracts/handoff-template.md` 格式交卷。

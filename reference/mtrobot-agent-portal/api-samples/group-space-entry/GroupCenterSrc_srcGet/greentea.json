@@ -1,0 +1,54 @@
+{
+  "status": 1,
+  "data": {
+    "title": "绿茶语录",
+    "notice": "设置绿茶语录",
+    "comment": "<p>如:绿茶语录</p>",
+    "form": [
+      {
+        "type": "switch",
+        "label": "功能开关",
+        "name": "switch_checked",
+        "value": true
+      },
+      {
+        "type": "input",
+        "label": "花费金币",
+        "name": "jb",
+        "placeholder": "输入每次金币数量",
+        "value": 0
+      },
+      {
+        "type": "input",
+        "label": "花费积分",
+        "name": "jf",
+        "placeholder": "输入每次积分数量",
+        "value": 0
+      },
+      {
+        "type": "input",
+        "label": "花费魅力",
+        "name": "ml",
+        "placeholder": "输入每次魅力数量",
+        "value": 0
+      },
+      {
+        "type": "time",
+        "label": "开始时间段",
+        "placeholder": "选择时间",
+        "name": "start_time",
+        "show": false,
+        "value": "00:00"
+      },
+      {
+        "type": "time",
+        "label": "结束时间段",
+        "placeholder": "选择时间",
+        "name": "end_time",
+        "show": false,
+        "value": "23:59"
+      }
+    ]
+  },
+  "message": "成功"
+}

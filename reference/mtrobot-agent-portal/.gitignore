@@ -1,0 +1,4 @@
+# 含敏感业务数据，勿提交公开仓库
+api-samples/full-sync/
+api-samples/read-only-samples.json
+api-samples/login-result.json

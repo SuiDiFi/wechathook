@@ -1,0 +1,454 @@
+{
+  "menu": [
+    {
+      "title": "基本配置",
+      "list": [
+        {
+          "title": "默认插件",
+          "icon": "apps-o",
+          "to": "/agent-src-asetting"
+        },
+        {
+          "title": "自动退群设置",
+          "icon": "chat-o",
+          "to": "/agent-src-drop"
+        },
+        {
+          "title": "到期提示语",
+          "icon": "chat-o",
+          "to": "/agent-src-exphint"
+        },
+        {
+          "title": "通用召唤词",
+          "icon": "chat-o",
+          "to": "/agent-src-bot_name"
+        },
+        {
+          "title": "签到",
+          "icon": "like-o",
+          "to": "/agent-src-sign"
+        },
+        {
+          "title": "邀请统计",
+          "icon": "other-pay",
+          "to": "/agent-src-invita"
+        },
+        {
+          "title": "护群管理",
+          "icon": "smile-o",
+          "to": "/agent-src-tube"
+        },
+        {
+          "title": "关键词回复",
+          "icon": "smile-comment-o",
+          "to": "/agent-src-reply"
+        },
+        {
+          "title": "菜单设置",
+          "icon": "label-o",
+          "to": "/agent-src-menu"
+        },
+        {
+          "title": "插件限制设置",
+          "icon": "label-o",
+          "to": "/agent-src-srclimit"
+        },
+        {
+          "title": "自动好友验证",
+          "icon": "like-o",
+          "to": "/agent-src-friend"
+        },
+        {
+          "title": "自动进群设置",
+          "icon": "like-o",
+          "to": "/agent-src-robotinto"
+        },
+        {
+          "title": "改名提醒设置",
+          "icon": "chat-o",
+          "to": "/agent-src-rename"
+        },
+        {
+          "title": "客服设置",
+          "icon": "like-o",
+          "to": "/agent-list-customer"
+        },
+        {
+          "title": "面包功能",
+          "icon": "friends-o",
+          "to": "/agent-src-bread"
+        },
+        {
+          "title": "消息限制设置",
+          "icon": "chat-o",
+          "to": "/agent-src-ratelimit"
+        },
+        {
+          "title": "贵族头衔",
+          "icon": "setting-o",
+          "to": "/agent-src-noble"
+        },
+        {
+          "title": "抽奖",
+          "icon": "label-o",
+          "to": "/agent-src-reward"
+        },
+        {
+          "title": "拆盲盒",
+          "icon": "label-o",
+          "to": "/agent-src-boxes"
+        },
+        {
+          "title": "砸金蛋",
+          "icon": "qian",
+          "to": "/agent-src-egg"
+        },
+        {
+          "title": "风险词",
+          "icon": "manager-o",
+          "to": "/agent-src-sensitive"
+        },
+        {
+          "title": "改密码",
+          "icon": "tgrj",
+          "to": "/agent-src-password"
+        },
+        {
+          "title": "联系客服",
+          "icon": "like-o",
+          "to": "/agent-src-service"
+        },
+        {
+          "title": "召唤客服",
+          "icon": "like-o",
+          "to": "/agent-src-call"
+        },
+        {
+          "title": "黑名单",
+          "icon": "like-o",
+          "to": "/agent-src-backlist"
+        }
+      ]
+    },
+    {
+      "title": "模板管理",
+      "list": [
+        {
+          "title": "欢迎语设置",
+          "icon": "chat-o",
+          "to": "/agent-src-welcome"
+        },
+        {
+          "title": "退群语设置",
+          "icon": "chat-o",
+          "to": "/agent-src-outmessage"
+        },
+        {
+          "title": "自定义指令",
+          "icon": "comment-o",
+          "to": "/agent-src-adverb"
+        },
+        {
+          "title": "二维码识别",
+          "icon": "comment-o",
+          "to": "/agent-qr-code"
+        },
+        {
+          "title": "模板列表",
+          "icon": "comment-o",
+          "to": "/agent-model-list"
+        }
+      ]
+    },
+    {
+      "title": "版本管理",
+      "list": [
+        {
+          "title": "激活码列表",
+          "icon": "comment-o",
+          "to": "/agent-codes-list"
+        },
+        {
+          "title": "激活码设置",
+          "icon": "label-o",
+          "to": "/agent-codes-product"
+        },
+        {
+          "title": "同步群功能开关",
+          "icon": "singout-o",
+          "to": "/agent-codes-setting"
+        },
+        {
+          "title": "同步配置",
+          "icon": "singout-o",
+          "to": "/agent-codes-asetting"
+        },
+        {
+          "title": "群空间入口配置",
+          "icon": "chat-o",
+          "to": "/agent-codes-entry"
+        },
+        {
+          "title": "退群拉黑",
+          "icon": "chat-o",
+          "to": "/agent-codes-block"
+        },
+        {
+          "title": "主人奖励",
+          "icon": "apps-o",
+          "to": "/agent-src-welfare"
+        },
+        {
+          "title": "风险防控",
+          "icon": "comment-o",
+          "to": "/agent-src-risk"
+        }
+      ]
+    },
+    {
+      "title": "娱乐功能",
+      "list": [
+        {
+          "title": "智能聊天",
+          "icon": "chat-o",
+          "to": "/agent-src-son"
+        },
+        {
+          "title": "天气播报",
+          "icon": "flower-o",
+          "to": "/agent-src-weather"
+        },
+        {
+          "title": "点歌",
+          "icon": "music-o",
+          "to": "/agent-src-song"
+        },
+        {
+          "title": "猜图片",
+          "icon": "gift-card-o",
+          "to": "/agent-src-guesstupian"
+        },
+        {
+          "title": "猜成语",
+          "icon": "gift-card-o",
+          "to": "/agent-src-guessphrase"
+        },
+        {
+          "title": "抢答",
+          "icon": "gift-card-o",
+          "to": "/agent-src-guessfirst"
+        },
+        {
+          "title": "猜数字",
+          "icon": "gift-card-o",
+          "to": "/agent-src-guessnumber"
+        },
+        {
+          "title": "成语接龙",
+          "icon": "circle",
+          "to": "/agent-src-chengyujielong"
+        },
+        {
+          "title": "猜歌名",
+          "icon": "medal-o",
+          "to": "/agent-src-guessmusic"
+        },
+        {
+          "title": "找茬",
+          "icon": "eye-o",
+          "to": "/agent-src-zhaocha"
+        },
+        {
+          "title": "配对",
+          "icon": "smile-o",
+          "to": "/agent-src-peidui"
+        },
+        {
+          "title": "猜王者英雄",
+          "icon": "smile-comment-o",
+          "to": "/agent-src-guesswangzhe"
+        },
+        {
+          "title": "猜英雄",
+          "icon": "smile-comment-o",
+          "to": "/agent-src-guesshero"
+        },
+        {
+          "title": "猜灯谜",
+          "icon": "smile-comment-o",
+          "to": "/agent-src-riddle"
+        },
+        {
+          "title": "巧思妙答",
+          "icon": "smile-comment-o",
+          "to": "/agent-src-question"
+        },
+        {
+          "title": "疯狂成语",
+          "icon": "circle",
+          "to": "/agent-src-idiom"
+        },
+        {
+          "title": "记账簿",
+          "icon": "desktop-o",
+          "to": "/agent-src-accounts"
+        },
+        {
+          "title": "打劫/劫色",
+          "icon": "cash-on-deliver",
+          "to": "/agent-src-dajie"
+        },
+        {
+          "title": "送礼物",
+          "icon": "gift-o",
+          "to": "/agent-src-liwu"
+        },
+        {
+          "title": "求财神",
+          "icon": "balance-o",
+          "to": "/agent-src-qiucaishen"
+        },
+        {
+          "title": "查星座",
+          "icon": "star-o",
+          "to": "/agent-src-xingzuo"
+        },
+        {
+          "title": "开宝箱",
+          "icon": "gem-o",
+          "to": "/agent-src-baoxiang"
+        },
+        {
+          "title": "婚姻玩法",
+          "icon": "like-o",
+          "to": "/agent-src-partner"
+        },
+        {
+          "title": "门派",
+          "icon": "desktop-o",
+          "to": "/agent-src-menpai"
+        },
+        {
+          "title": "拜师",
+          "icon": "desktop-o",
+          "to": "/agent-src-baishi"
+        },
+        {
+          "title": "收小弟",
+          "icon": "desktop-o",
+          "to": "/agent-src-nuli"
+        },
+        {
+          "title": "打赏/抹黑",
+          "icon": "desktop-o",
+          "to": "/agent-src-dsmh"
+        },
+        {
+          "title": "舔狗日记",
+          "icon": "desktop-o",
+          "to": "/agent-src-tgrj"
+        },
+        {
+          "title": "cpdd",
+          "icon": "desktop-o",
+          "to": "/agent-src-cpdd"
+        },
+        {
+          "title": "一言",
+          "icon": "desktop-o",
+          "to": "/agent-src-sentence"
+        },
+        {
+          "title": "绿茶语录",
+          "icon": "desktop-o",
+          "to": "/agent-src-greentea"
+        },
+        {
+          "title": "正能量",
+          "icon": "desktop-o",
+          "to": "/agent-src-power"
+        },
+        {
+          "title": "土味情话",
+          "icon": "desktop-o",
+          "to": "/agent-src-lowlove"
+        },
+        {
+          "title": "抽签",
+          "icon": "desktop-o",
+          "to": "/agent-src-qian"
+        },
+        {
+          "title": "超级宝宝",
+          "icon": "gift-o",
+          "to": "/agent-src-baby"
+        },
+        {
+          "title": "超级农场",
+          "icon": "gift-o",
+          "to": "/agent-src-farms"
+        },
+        {
+          "title": "后宫",
+          "icon": "desktop-o",
+          "to": "/agent-src-harem"
+        },
+        {
+          "title": "创业",
+          "icon": "desktop-o",
+          "to": "/agent-src-chuanye"
+        },
+        {
+          "title": "名片",
+          "icon": "desktop-o",
+          "to": "/agent-src-mycard"
+        },
+        {
+          "title": "查询功能",
+          "icon": "desktop-o",
+          "to": "/agent-src-search"
+        },
+        {
+          "title": "人品",
+          "icon": "desktop-o",
+          "to": "/agent-src-renpin"
+        },
+        {
+          "title": "夺宝大战",
+          "icon": "desktop-o",
+          "to": "/agent-src-treasure"
+        },
+        {
+          "title": "好友",
+          "icon": "friends-o",
+          "to": "/agent-src-crony"
+        },
+        {
+          "title": "炫富",
+          "icon": "cash-on-deliver",
+          "to": "/agent-src-flaunt"
+        },
+        {
+          "title": "贵族礼物",
+          "icon": "gift-o",
+          "to": "/agent-src-present"
+        },
+        {
+          "title": "钓鱼",
+          "icon": "gift-o",
+          "to": "/agent-src-fish"
+        },
+        {
+          "title": "视频解析",
+          "icon": "gift-o",
+          "to": "/agent-src-analysis"
+        },
+        {
+          "title": "五子棋",
+          "icon": "gift-o",
+          "to": "/agent-src-gobang"
+        }
+      ]
+    }
+  ]
+}

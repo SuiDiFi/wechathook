@@ -1,0 +1,314 @@
+/**
+ * 萌兔总代 · H5 / Web 深度自适应样式
+ * 依赖 adaptive.js 写入的 --mt-shell-* 与 data-mt-viewport
+ */
+:root {
+  --mt-shell-w-tablet: 480px;
+  --mt-shell-w-desktop: 820px;
+  --mt-shell-bg: #eceef2;
+  --mt-shell-bg-web:
+    radial-gradient(ellipse 70% 50% at 18% 0%, rgba(7, 193, 96, 0.09), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 92% 100%, rgba(255, 159, 67, 0.07), transparent 50%),
+    var(--mt-shell-bg);
+  --mt-shell-shadow:
+    0 16px 48px rgba(15, 23, 42, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  --mt-shell-radius: 16px;
+  --mt-shell-max: 100%;
+  --mt-shell-left: 0px;
+  --mt-shell-center-x: 50vw;
+  --mt-safe-bottom: env(safe-area-inset-bottom, 0px);
+  --mt-safe-top: env(safe-area-inset-top, 0px);
+}
+
+/* —— 基础 —— */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--mt-shell-bg);
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mt-adaptive-shell {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  isolation: isolate;
+  overflow-x: hidden;
+}
+
+.mt-adaptive-shell #app {
+  min-height: inherit;
+}
+
+/* —— 平板 / Web 壳层 —— */
+html[data-mt-viewport="tablet"],
+html[data-mt-viewport="desktop"] {
+  background: var(--mt-shell-bg-web);
+}
+
+html[data-mt-viewport="tablet"] .mt-adaptive-shell {
+  max-width: var(--mt-shell-w-tablet);
+  box-shadow: var(--mt-shell-shadow);
+}
+
+html[data-mt-viewport="desktop"] .mt-adaptive-shell {
+  max-width: var(--mt-shell-w-desktop);
+  box-shadow: var(--mt-shell-shadow);
+}
+
+@media (min-width: 768px) and (min-height: 640px) {
+  html[data-mt-viewport="tablet"] body,
+  html[data-mt-viewport="desktop"] body {
+    padding: calc(12px + var(--mt-safe-top)) 0 calc(12px + var(--mt-safe-bottom));
+  }
+
+  html[data-mt-viewport="tablet"] .mt-adaptive-shell,
+  html[data-mt-viewport="desktop"] .mt-adaptive-shell {
+    min-height: calc(100vh - 24px - var(--mt-safe-top) - var(--mt-safe-bottom));
+    min-height: calc(100dvh - 24px - var(--mt-safe-top) - var(--mt-safe-bottom));
+    border-radius: var(--mt-shell-radius);
+    overflow: clip;
+  }
+}
+
+/* Web 端滚动条 */
+html[data-mt-viewport="tablet"] .mt-adaptive-shell,
+html[data-mt-viewport="desktop"] .mt-adaptive-shell {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+html[data-mt-viewport="tablet"] .mt-adaptive-shell::-webkit-scrollbar,
+html[data-mt-viewport="desktop"] .mt-adaptive-shell::-webkit-scrollbar {
+  width: 6px;
+}
+
+html[data-mt-viewport="tablet"] .mt-adaptive-shell::-webkit-scrollbar-thumb,
+html[data-mt-viewport="desktop"] .mt-adaptive-shell::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+}
+
+/* —— 壳层内 Vant 常规组件 Web 可读性 —— */
+html[data-mt-viewport="tablet"] .van-cell,
+html[data-mt-viewport="desktop"] .van-cell {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+html[data-mt-viewport="tablet"] .van-cell:active,
+html[data-mt-viewport="desktop"] .van-cell:active {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+html[data-mt-viewport="desktop"] .van-grid-item__content {
+  padding: 18px 10px;
+}
+
+html[data-mt-viewport="desktop"] .van-button--normal {
+  font-size: 15px;
+}
+
+html[data-mt-viewport="tablet"] .van-field__control,
+html[data-mt-viewport="desktop"] .van-field__control {
+  font-size: 15px;
+}
+
+/* Web 鼠标交互 */
+@media (hover: hover) and (pointer: fine) {
+  html[data-mt-viewport="tablet"] .van-cell:hover,
+  html[data-mt-viewport="desktop"] .van-cell:hover {
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  html[data-mt-viewport="tablet"] .van-grid-item:hover,
+  html[data-mt-viewport="desktop"] .van-grid-item:hover {
+    opacity: 0.92;
+  }
+}
+
+/* —— 固定层：与壳层几何对齐（teleport 到 body） —— */
+html[data-mt-viewport="tablet"] .mt-fixed-to-shell,
+html[data-mt-viewport="desktop"] .mt-fixed-to-shell,
+html[data-mt-viewport="tablet"] .van-tabbar,
+html[data-mt-viewport="desktop"] .van-tabbar,
+html[data-mt-viewport="tablet"] .van-nav-bar--fixed,
+html[data-mt-viewport="desktop"] .van-nav-bar--fixed,
+html[data-mt-viewport="tablet"] .van-submit-bar,
+html[data-mt-viewport="desktop"] .van-submit-bar,
+html[data-mt-viewport="tablet"] .van-goods-action,
+html[data-mt-viewport="desktop"] .van-goods-action,
+html[data-mt-viewport="tablet"] .van-sticky--fixed,
+html[data-mt-viewport="desktop"] .van-sticky--fixed,
+html[data-mt-viewport="tablet"] .van-index-bar__sidebar,
+html[data-mt-viewport="desktop"] .van-index-bar__sidebar {
+  width: var(--mt-shell-max) !important;
+  max-width: var(--mt-shell-max) !important;
+  left: var(--mt-shell-left) !important;
+  right: auto !important;
+  transform: none !important;
+  box-sizing: border-box;
+}
+
+/* 底部 / 顶部抽屉 */
+html[data-mt-viewport="tablet"] .van-popup--bottom,
+html[data-mt-viewport="desktop"] .van-popup--bottom,
+html[data-mt-viewport="tablet"] .van-popup--top,
+html[data-mt-viewport="desktop"] .van-popup--top {
+  width: var(--mt-shell-max) !important;
+  max-width: var(--mt-shell-max) !important;
+  left: var(--mt-shell-left) !important;
+  right: auto !important;
+}
+
+html[data-mt-viewport="tablet"] .van-popup--bottom.van-popup--round,
+html[data-mt-viewport="desktop"] .van-popup--bottom.van-popup--round {
+  transform: none;
+}
+
+/* 居中弹层 */
+html[data-mt-viewport="tablet"] .van-popup--center,
+html[data-mt-viewport="desktop"] .van-popup--center,
+html[data-mt-viewport="tablet"] .van-dialog,
+html[data-mt-viewport="desktop"] .van-dialog {
+  max-width: min(420px, calc(var(--mt-shell-max) - 32px)) !important;
+  left: var(--mt-shell-center-x) !important;
+  transform: translateX(-50%) !important;
+}
+
+/* 动作面板 */
+html[data-mt-viewport="tablet"] .van-action-sheet,
+html[data-mt-viewport="desktop"] .van-action-sheet {
+  width: var(--mt-shell-max) !important;
+  max-width: var(--mt-shell-max) !important;
+  left: var(--mt-shell-left) !important;
+  right: auto !important;
+}
+
+/* 遮罩：全屏 dim，内容区仍居中 */
+html[data-mt-viewport="tablet"] .van-overlay,
+html[data-mt-viewport="desktop"] .van-overlay {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  transform: none !important;
+}
+
+/* Toast / Notify */
+html[data-mt-viewport="tablet"] .van-toast,
+html[data-mt-viewport="desktop"] .van-toast,
+html[data-mt-viewport="tablet"] .van-notify,
+html[data-mt-viewport="desktop"] .van-notify {
+  left: var(--mt-shell-center-x) !important;
+  transform: translateX(-50%) !important;
+  max-width: min(360px, calc(var(--mt-shell-max) - 24px));
+}
+
+/* 数字键盘 */
+html[data-mt-viewport="tablet"] .van-number-keyboard,
+html[data-mt-viewport="desktop"] .van-number-keyboard {
+  width: var(--mt-shell-max) !important;
+  left: var(--mt-shell-left) !important;
+  right: auto !important;
+}
+
+/* 图片预览 */
+html[data-mt-viewport="tablet"] .van-image-preview,
+html[data-mt-viewport="desktop"] .van-image-preview {
+  width: var(--mt-shell-max) !important;
+  left: var(--mt-shell-left) !important;
+  right: auto !important;
+}
+
+html[data-mt-viewport="tablet"] .van-image-preview__index,
+html[data-mt-viewport="desktop"] .van-image-preview__index {
+  left: calc(var(--mt-shell-left) + 16px);
+}
+
+/* 下拉菜单面板 */
+html[data-mt-viewport="tablet"] .van-dropdown-item__content,
+html[data-mt-viewport="desktop"] .van-dropdown-item__content {
+  max-width: var(--mt-shell-max);
+  margin-left: var(--mt-shell-left);
+}
+
+/* 日历 / 选择器全屏类 */
+html[data-mt-viewport="tablet"] .van-calendar__popup,
+html[data-mt-viewport="desktop"] .van-calendar__popup,
+html[data-mt-viewport="tablet"] .van-picker__toolbar,
+html[data-mt-viewport="desktop"] .van-picker__toolbar {
+  box-sizing: border-box;
+}
+
+html[data-mt-viewport="tablet"] .van-calendar__popup.van-popup--bottom,
+html[data-mt-viewport="desktop"] .van-calendar__popup.van-popup--bottom {
+  width: var(--mt-shell-max) !important;
+  left: var(--mt-shell-left) !important;
+}
+
+/* —— 极窄屏 —— */
+@media (max-width: 360px) {
+  .mt-adaptive-shell {
+    width: 100%;
+  }
+
+  .van-cell {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* —— 横屏手机：略减 rem 视觉压力 —— */
+@media (max-height: 480px) and (orientation: landscape) {
+  html[data-mt-viewport="mobile"] .mt-adaptive-shell {
+    min-height: auto;
+  }
+}
+
+/* —— 无障碍 —— */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .van-popup,
+  .van-dialog,
+  .van-overlay {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* —— 打印 —— */
+@media print {
+  body {
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  .mt-adaptive-shell {
+    max-width: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .van-tabbar,
+  .van-nav-bar--fixed {
+    display: none !important;
+  }
+}
