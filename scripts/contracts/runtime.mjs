@@ -76,8 +76,23 @@ if (await serviceUp(`${BOT}/health`)) {
   skipped++;
 }
 
+section("debug menu endpoint");
+
+if (await serviceUp(`${BOT}/health`)) {
+  const { json } = await fetchJson(`${BOT}/super/debug/menu?roomId=${encodeURIComponent(ROOM)}`);
+  if (json.status === 1 && json.data && "menuTextPreview" in json.data) pass("GET /super/debug/menu shape");
+  else {
+    fail("GET /super/debug/menu shape");
+    failed++;
+  }
+} else {
+  skip("debug menu (bot offline)");
+  skipped++;
+}
+
 await maybeRun("e2e:mvp", `${BOT}/health`, "scripts/e2e-mvp-sign.mjs");
 await maybeRun("e2e:sign-alignment", `${ADMIN}/health`, "scripts/e2e-sign-alignment.mjs");
+await maybeRun("e2e:menu-alignment", `${ADMIN}/health`, "scripts/e2e-menu-alignment.mjs");
 await maybeRun("e2e:cloud", `${ADMIN}/health`, "scripts/e2e-cloud-local.mjs");
 
 console.log(`\nRuntime contracts: failed=${failed}, skipped=${skipped}`);

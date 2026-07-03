@@ -112,6 +112,21 @@ export class PluginConfigLoader {
     };
   }
 
+  /** 供 admin / 调试：当前 menu 生效配置摘要 */
+  describeMenu(roomId: string): Record<string, unknown> | null {
+    const op = this.resolveOp(roomId, "menu");
+    if (!op) return null;
+    const text = this.resolveMenuText(roomId);
+    return {
+      roomId,
+      agentOverride: fs.existsSync(agentOverridePath(this.projectRoot, "menu")),
+      groupOverride: fs.existsSync(groupOverridePath(this.projectRoot, roomId, "menu")),
+      enabled: op.enabled,
+      messagePreview: asString(op.values.message).slice(0, 80),
+      menuTextPreview: text?.slice(0, 120) ?? null,
+    };
+  }
+
   private loadOpFromDir(
     dir: string,
     op: string,

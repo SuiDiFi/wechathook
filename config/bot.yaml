@@ -29,7 +29,7 @@ bot:
 
 # inject 直连模式：gateway 收 rabbitr 回调 → bot-server → /r/stm 出站
 botServer:
-  url: "http://127.0.0.1:8788"
+  url: "https://api.sc5.top"
   relayEnabled: true
 
 plugins:

@@ -10,6 +10,11 @@ export function mountConsoleUi(app: Hono, config: AdminConfig, projectRoot: stri
   app.get("/console/", (c) => serveFile(c, consoleDir, "index.html", "text/html; charset=utf-8"));
   app.get("/console/app.js", (c) => serveFile(c, consoleDir, "app.js", "application/javascript; charset=utf-8"));
   app.get("/console/console.css", (c) => serveFile(c, consoleDir, "console.css", "text/css; charset=utf-8"));
+  app.get("/console/js/:name", (c) => {
+    const name = c.req.param("name");
+    if (!name || name.includes("..") || name.includes("/")) return c.text("bad path", 400);
+    return serveFile(c, path.join(consoleDir, "js"), name, "application/javascript; charset=utf-8");
+  });
 }
 
 function serveFile(c: Context, dir: string, name: string, type: string): Response {

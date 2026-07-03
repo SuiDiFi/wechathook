@@ -34,6 +34,8 @@ services:
     volumes:
       - ../config:/app/config
       - bot-data:/app/data
+      - ../data/admin-seed:/app/data/admin-seed:ro
+      - ../data/master:/app/data/master:ro
       - ../reference:/app/reference:ro
 
 volumes:

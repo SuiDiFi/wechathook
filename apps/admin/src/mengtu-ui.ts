@@ -31,7 +31,11 @@ export function mountMengtuAgentUi(app: Hono, config: AdminConfig, projectRoot: 
   mountWechathookAdaptive(app, adaptiveDir);
 
   const serveConfigJs = (c: Context) => {
-    const origin = new URL(c.req.url).origin;
+    const forwardedProto = c.req.header("x-forwarded-proto")?.split(",")[0]?.trim();
+    const forwardedHost = c.req.header("x-forwarded-host")?.split(",")[0]?.trim();
+    const host = forwardedHost ?? c.req.header("host") ?? new URL(c.req.url).host;
+    const proto = forwardedProto ?? new URL(c.req.url).protocol.replace(":", "");
+    const origin = `${proto}://${host}`;
     return c.text(`window.g = { site: '${origin}/' };`, 200, {
       "Content-Type": "application/javascript; charset=utf-8",
     });
@@ -135,7 +139,7 @@ function serveAdaptiveAsset(c: Context, dir: string, name: string, type: string)
 }
 
 /** 自适应资源版本（改 adaptive.css/js 时递增） */
-const ADAPTIVE_ASSET_VERSION = "2";
+const ADAPTIVE_ASSET_VERSION = "7";
 
 function patchAgentIndexHtml(html: string): string {
   const v = ADAPTIVE_ASSET_VERSION;
@@ -151,7 +155,7 @@ function patchAgentIndexHtml(html: string): string {
     .replace(/<title>h5<\/title>/, "<title>wechathook 总代后台</title>")
     .replace(
       /<meta name="viewport"[^>]*>/,
-      '<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,minimum-scale=1,viewport-fit=cover">',
+      '<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">',
     )
     .replace(/<script src="\/static\/config\.js"><\/script>/, `<script src="/static/config.js"></script>${adaptiveHead}`)
     .replace(/<div id="app"><\/div>/, '<div class="mt-adaptive-shell"><div id="app"></div></div>');

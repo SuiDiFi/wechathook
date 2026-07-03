@@ -6,9 +6,10 @@ import {
   loadConfig,
   readGroupConfig,
 } from "@wechathook/bot-core";
-import type { AdminConfig } from "../config.js";
 import { AGENT_UID_START } from "../agent-defaults.js";
 import { getMasterStore } from "../master/store.js";
+import type { ApiBuilder, ProviderContext } from "./types.js";
+import { apiOk } from "./types.js";
 
 const SEED_DIR = "data/admin-seed";
 const DEFAULT_HEAD = "/img/head.40740b2d.jpg";
@@ -26,7 +27,7 @@ function fmtTime(ts: number): string {
 }
 
 /** 完整侧栏菜单（受总控 hiddenRoutes 过滤） */
-export function buildAgentMenus(projectRoot: string, config: AdminConfig): unknown {
+export const buildAgentMenus: ApiBuilder = ({ projectRoot, config }) => {
   const raw = readSeed<{ menu: Array<{ title?: string; list?: Array<{ to?: string }> }> }>(
     projectRoot,
     "agent-menus-full.json",
@@ -39,48 +40,38 @@ export function buildAgentMenus(projectRoot: string, config: AdminConfig): unkno
       list: store.filterMenuTree(sec.list ?? []),
     }))
     .filter((sec) => (sec.list?.length ?? 0) > 0);
-  return { status: 1, message: "成功", data: { menu } };
-}
+  return apiOk({ menu });
+};
 
 /** 代理中心首页统计（已生效机器人数） */
-export function buildAgentIndex(config: AdminConfig, projectRoot: string): unknown {
+export const buildAgentIndex: ApiBuilder = ({ projectRoot, config }) => {
   const botConfig = loadConfig(config.configPath, projectRoot);
   const wxid = botConfig.bot.botWxid;
-  return {
-    status: 1,
-    message: "成功",
-    data: { weichat_count: wxid ? 1 : 0 },
-  };
-}
+  return apiOk({ weichat_count: wxid ? 1 : 0 });
+};
 
 /** 全局站点配置（标题/公告，驱动 App 壳层） */
-export function buildSettingIndex(projectRoot: string, config: AdminConfig): unknown {
+export const buildSettingIndex: ApiBuilder = ({ projectRoot, config }) => {
   const policy = getMasterStore(projectRoot, config).load();
-  return {
+  return apiOk({
     status: 1,
-    message: "成功",
-    data: {
-      status: 1,
-      web_title: "wechathook 总代后台",
-      web_bot_name: "wechathook",
-      run_type: "h5",
-      notice: policy.announcement || "",
-      app_url: "",
-      app_scheme: "",
-      is_agent: 1,
-    },
-  };
-}
+    web_title: "wechathook 总代后台",
+    web_bot_name: "wechathook",
+    run_type: "h5",
+    notice: policy.announcement || "",
+    app_url: "",
+    app_scheme: "",
+    is_agent: 1,
+  });
+};
 
-export function buildLoginIsLogin(): unknown {
-  return { status: 1, message: "is user", data: [1] };
-}
+export const buildLoginIsLogin: ApiBuilder = () =>
+  apiOk([1], "is user");
 
-export function buildHelpIndex(): unknown {
-  return { status: 1, message: "成功", data: { list: [], notice: [] } };
-}
+export const buildHelpIndex: ApiBuilder = () =>
+  apiOk({ list: [], notice: [] });
 
-export function buildMemberIndex(config: AdminConfig, projectRoot: string): unknown {
+export const buildMemberIndex: ApiBuilder = ({ projectRoot, config }) => {
   const botConfig = loadConfig(config.configPath, projectRoot);
   const groupsDir = getGroupsDir(config.configPath, projectRoot);
   const roomIds = listGroupConfigRoomIds(groupsDir);
@@ -102,56 +93,52 @@ export function buildMemberIndex(config: AdminConfig, projectRoot: string): unkn
     };
   });
 
-  return {
-    status: 1,
-    message: "成功",
-    data: {
-      wechat_info_show: hasBot,
-      total: hasBot ? 1 : 0,
-      account: hasBot
-          ? [
-              {
-                wxid,
-                nickname: "本机 Bot",
-                headimgurl: DEFAULT_HEAD,
-                status: 5,
-                enable: 1,
-                id: 1,
-                login_time: fmtTime(Math.floor(Date.now() / 1000)),
-                create_time: Math.floor(Date.now() / 1000),
-                today: 0,
-                yesterday: 0,
-              },
-            ]
-          : [],
-      groups,
-      unused: 0,
-      is_agent: 1,
-      team: {
-        list: [],
-        group_count: groups.length,
-        group_number: groups.length,
-        id: uid,
-        group_award: 0,
-        get_news: 0,
-        quota_num: policy.agent.display.quotaNum,
-        serve_name: serveName,
-        robot_content: policy.agent.display.robotContent,
-      },
+  return apiOk({
+    wechat_info_show: hasBot,
+    total: hasBot ? 1 : 0,
+    account: hasBot
+      ? [
+          {
+            wxid,
+            nickname: "本机 Bot",
+            headimgurl: DEFAULT_HEAD,
+            status: 5,
+            enable: 1,
+            id: 1,
+            login_time: fmtTime(Math.floor(Date.now() / 1000)),
+            create_time: Math.floor(Date.now() / 1000),
+            today: 0,
+            yesterday: 0,
+          },
+        ]
+      : [],
+    groups,
+    unused: 0,
+    is_agent: 1,
+    team: {
+      list: [],
+      group_count: groups.length,
+      group_number: groups.length,
+      id: uid,
+      group_award: 0,
+      get_news: 0,
+      quota_num: policy.agent.display.quotaNum,
+      serve_name: serveName,
+      robot_content: policy.agent.display.robotContent,
     },
-  };
-}
+  });
+};
 
-export function buildCodesGetList(projectRoot: string): unknown {
+export const buildCodesGetList: ApiBuilder = ({ projectRoot }) => {
   const seed = readSeed<{ product: unknown[]; total: number; list: unknown[] }>(
     projectRoot,
     "codes-products.json",
     { product: [], total: 0, list: [] },
   );
-  return { status: 1, message: "成功", data: { ...seed, total: 0, list: [] } };
-}
+  return apiOk({ ...seed, total: 0, list: [] });
+};
 
-export function buildGroupList(config: AdminConfig, projectRoot: string): unknown {
+export const buildGroupList: ApiBuilder = ({ projectRoot, config }) => {
   const groupsDir = getGroupsDir(config.configPath, projectRoot);
   const roomIds = listGroupConfigRoomIds(groupsDir);
   const list = roomIds.map((roomId, i) => {
@@ -163,9 +150,7 @@ export function buildGroupList(config: AdminConfig, projectRoot: string): unknow
       expires_time: gc?.licenseExpires ? fmtTime(gc.licenseExpires) : "",
     };
   });
-  return { status: 1, message: "成功", data: { list, total: list.length } };
-}
+  return apiOk({ list, total: list.length });
+};
 
-export function buildGroupUnusedList(config: AdminConfig, projectRoot: string): unknown {
-  return buildGroupList(config, projectRoot);
-}
+export const buildGroupUnusedList: ApiBuilder = (ctx) => buildGroupList(ctx);

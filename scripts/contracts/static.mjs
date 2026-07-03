@@ -59,6 +59,7 @@ for (const f of [
   "docs/development/CURRENT.md",
   "docs/development/integration-workflow.md",
   "docs/development/admin-ui-architecture.md",
+  "docs/development/domain-convention.md",
   "docs/development/contracts/README.md",
   "docs/development/contracts/admin-bot.md",
   "docs/development/contracts/super-api.md",
@@ -88,6 +89,13 @@ const menuEngine = readText("packages/bot-core/src/super/menu-engine.ts");
 check(loader.includes("resolveMenuText"), "PluginConfigLoader.resolveMenuText");
 check(loader.includes("describeMenu"), "PluginConfigLoader.describeMenu");
 check(menuEngine.includes("resolveMenuText"), "MenuEngine uses plugin config");
+
+section("nginx domain convention");
+
+const nginx = readText("deploy/nginx/wechathook.conf");
+check(nginx.includes("server_name api.sc5.top"), "nginx api.sc5.top → bot-server");
+check(nginx.includes("server_name bot.sc5.top"), "nginx bot.sc5.top → admin");
+check(nginx.includes("server_name admin.sc5.top"), "nginx admin.sc5.top → admin");
 
 section("cursor rules");
 

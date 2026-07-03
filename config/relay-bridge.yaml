@@ -11,7 +11,7 @@ upstream:
   mengtuApi: "https://api.wxmtu.com"
 
 # 自建 bot-server（/super/msg/*）
-botServer: "http://127.0.0.1:8788"
+botServer: "https://api.sc5.top"
 
 # 只劫持 /super/*；设为 true 则全部走 bot-server（调试用）
 superOnly: false

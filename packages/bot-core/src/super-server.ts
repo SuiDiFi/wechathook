@@ -45,6 +45,15 @@ export function createSuperApp(options: SuperServerOptions): Hono {
     return c.json({ status: 1, msg: "suc", data: pluginConfig.describeSign(roomId) });
   });
 
+  /** 调试：查看某群当前生效的菜单配置（含 agent-overrides） */
+  app.get("/super/debug/menu", (c) => {
+    const roomId = c.req.query("roomId") ?? "";
+    if (!roomId || !pluginConfig) {
+      return c.json({ status: 0, msg: "missing roomId or pluginConfig", data: null });
+    }
+    return c.json({ status: 1, msg: "suc", data: pluginConfig.describeMenu(roomId) });
+  });
+
   /** 对齐萌兔 POST /super/msg/callback */
   app.post("/super/msg/callback", async (c) => {
     const params = await parseBody(c);

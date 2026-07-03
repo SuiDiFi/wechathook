@@ -14,6 +14,7 @@ import {
   buildMemberIndex,
   buildSettingIndex,
 } from "./providers/local-api.js";
+import { providerCtx } from "./providers/types.js";
 import { getMasterStore } from "./master/store.js";
 
 export interface MengtuSession {
@@ -98,18 +99,18 @@ export function registerMengtuLocalApiRoutes(
   config: AdminConfig,
   projectRoot: string,
 ): void {
-  app.post("/api/Agent/menus", (c) => c.json(buildAgentMenus(projectRoot, config)));
-  app.post("/api/Agent/index", (c) => c.json(buildAgentIndex(config, projectRoot)));
-  app.post("/api/Member/menu", (c) => c.json(buildAgentMenus(projectRoot, config)));
-  app.post("/api/Member/index", (c) => c.json(buildMemberIndex(config, projectRoot)));
-  app.post("/api/Setting/index", (c) => c.json(buildSettingIndex(projectRoot, config)));
-  app.post("/api/Login/isLogin", (c) => c.json(buildLoginIsLogin()));
-  app.post("/api/Help/index", (c) => c.json(buildHelpIndex()));
-  app.post("/api/Help/notice", (c) => c.json(buildHelpIndex()));
-  app.post("/api/Codes/getList", (c) => c.json(buildCodesGetList(projectRoot)));
-  app.post("/api/Group/get", (c) => c.json(buildGroupList(config, projectRoot)));
-  app.post("/api/Group/getUnusedList", (c) => c.json(buildGroupUnusedList(config, projectRoot)));
-  app.post("/api/Group/selectGroup", (c) => c.json(buildGroupList(config, projectRoot)));
+  app.post("/api/Agent/menus", (c) => c.json(buildAgentMenus(providerCtx(projectRoot, config))));
+  app.post("/api/Agent/index", (c) => c.json(buildAgentIndex(providerCtx(projectRoot, config))));
+  app.post("/api/Member/menu", (c) => c.json(buildAgentMenus(providerCtx(projectRoot, config))));
+  app.post("/api/Member/index", (c) => c.json(buildMemberIndex(providerCtx(projectRoot, config))));
+  app.post("/api/Setting/index", (c) => c.json(buildSettingIndex(providerCtx(projectRoot, config))));
+  app.post("/api/Login/isLogin", (c) => c.json(buildLoginIsLogin(providerCtx(projectRoot, config))));
+  app.post("/api/Help/index", (c) => c.json(buildHelpIndex(providerCtx(projectRoot, config))));
+  app.post("/api/Help/notice", (c) => c.json(buildHelpIndex(providerCtx(projectRoot, config))));
+  app.post("/api/Codes/getList", (c) => c.json(buildCodesGetList(providerCtx(projectRoot, config))));
+  app.post("/api/Group/get", (c) => c.json(buildGroupList(providerCtx(projectRoot, config))));
+  app.post("/api/Group/getUnusedList", (c) => c.json(buildGroupUnusedList(providerCtx(projectRoot, config))));
+  app.post("/api/Group/selectGroup", (c) => c.json(buildGroupList(providerCtx(projectRoot, config))));
 }
 
 /** 空结构兜底（须在所有 /api/* 之后） */

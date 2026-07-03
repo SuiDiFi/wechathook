@@ -15,6 +15,7 @@
     "typecheck": "pnpm -r run typecheck",
     "e2e:mvp": "node scripts/e2e-mvp-sign.mjs",
     "e2e:sign-alignment": "node scripts/e2e-sign-alignment.mjs",
+    "e2e:menu-alignment": "node scripts/e2e-menu-alignment.mjs",
     "contracts": "node scripts/contracts/run-all.mjs",
     "contracts:static": "node scripts/contracts/static.mjs",
     "contracts:runtime": "node scripts/contracts/runtime.mjs",

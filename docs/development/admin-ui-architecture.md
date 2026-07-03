@@ -111,6 +111,9 @@ packages/plugin-config/                  # op 解析，bot-server 只读
 |------|------|
 | **不改 bundle** | 不编辑 `reference/.../static/js/app.*.js` |
 | **适配层唯一** | 样式/断点/壳层 → `public/mengtu/adaptive.*`；改完递增 `ADAPTIVE_VERSION` |
+| **总代中心列表化** | `/agent-center` 圆盘 hub → `.mt-agent-center-list`（`adaptive.js` 自动打标 + `adaptive.css` 覆盖） |
+| **配置宫格列表化** | `/agent-template` 等 `.function-list` 页 → `.mt-op-menu-page`；工具栏切换 **列表 / 宫格**（`localStorage: mt-op-menu-layout`） |
+| **微信 WebView** | `maximum-scale=1` + 输入框 `16px` + 移动端 rem 锁定；`data-mt-wechat-mobile` 全宽壳层 |
 | **API 契约** | srcPost 写入路径见 `packages/plugin-config/override-paths.ts` |
 | **静态 sync** | hash 变更后 `pnpm sync:mengtu-static`，拒绝 HTML 伪装成 JS |
 
@@ -190,7 +193,7 @@ pnpm sync:mengtu-static          # 若动过萌兔静态
 pnpm --filter @wechathook/admin build
 pnpm e2e:admin-ui                # 总控
 pnpm e2e:sign-alignment          # 总代 → bot（本地或云 ADMIN_URL）
-$env:ADMIN_URL="https://admin.sc5.top"; pnpm e2e:cloud   # 云探针
+$env:ADMIN_URL="https://bot.sc5.top"; pnpm e2e:cloud   # 云探针（总代域名）
 ```
 
 ---

@@ -9,7 +9,7 @@
 
 | 文档 | 边界 | 验证方式 |
 |------|------|----------|
-| [admin-bot.md](./admin-bot.md) | admin `srcPost` → 文件 → bot-server | `pnpm e2e:sign-alignment` |
+| [admin-bot.md](./admin-bot.md) | admin `srcPost` → 文件 → bot-server | `pnpm e2e:sign-alignment` · `pnpm e2e:menu-alignment` |
 | [super-api.md](./super-api.md) | inject/relay → bot-server `/super/*` | `pnpm e2e:mvp` |
 | [config-priority.md](./config-priority.md) | 配置合并优先级 | `pnpm contracts` 静态检查 |
 | [handoff-template.md](./handoff-template.md) | 窗口交卷格式 | 人工 / 集成会话 |

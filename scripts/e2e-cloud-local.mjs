@@ -1,17 +1,24 @@
 #!/usr/bin/env node
 /** 云端-本地联调探针：admin → bot-server */
 const ADMIN = process.env.ADMIN_URL ?? "http://127.0.0.1:8790";
+const ADMIN_TOKEN = process.env.ADMIN_TOKEN ?? "";
 const ROOM = "57226609398@chatroom";
 
+function authHeaders(extra = {}) {
+  const headers = { ...extra };
+  if (ADMIN_TOKEN) headers.Authorization = `Bearer ${ADMIN_TOKEN}`;
+  return headers;
+}
+
 async function get(path) {
-  const res = await fetch(`${ADMIN}${path}`);
+  const res = await fetch(`${ADMIN}${path}`, { headers: authHeaders() });
   return { ok: res.ok, json: await res.json() };
 }
 
 async function post(path, body) {
   const res = await fetch(`${ADMIN}${path}`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: authHeaders({ "Content-Type": "application/json" }),
     body: JSON.stringify(body),
   });
   return { ok: res.ok, json: await res.json() };

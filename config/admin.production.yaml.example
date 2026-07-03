@@ -6,6 +6,7 @@ listen:
   port: 8790
 
 # Docker 内网；若 admin 与 bot-server 同 compose，保持此地址
+# 公网引擎 API 见 docs/development/domain-convention.md（api.sc5.top）
 botServer: "http://bot-server:8788"
 
 configPath: "config/bot.yaml"
