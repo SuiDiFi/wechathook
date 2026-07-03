@@ -10,6 +10,13 @@ data/agent-overrides/
 config/admin.production.yaml
 .DS_Store
 *.tsbuildinfo
-playwright-tmp/
-temp-*/
-temp-xv-scan/
+# 根目录误放（应使用 _archive/root-scratch/）
+/main.js
+/dump.rdb
+/temp-*
+/playwright-tmp/
+/temp-xv-scan/
+/.playwright-tmp/
+# 归档目录内 scratch 也不提交运行时产物
+_archive/scratch/
+logs/

@@ -29,7 +29,7 @@
                               public/mengtu/         (自适应层)
 ```
 
-**禁止：** 在 `public/agent/` 重建总代 SPA（历史遗留，未挂载）。
+**禁止：** 在 `apps/admin/public/agent/` 重建总代 SPA（已迁至 `_archive/deprecated/admin-agent-spa/`）。
 
 ---
 
@@ -62,7 +62,7 @@ apps/admin/
 ├── public/
 │   ├── console/             # ✅ 总控 UI（index.html + app.js + console.css）
 │   ├── mengtu/              # ✅ 总代自适应（adaptive.css/js）
-│   └── agent/               # ⛔ 废弃，勿新增功能
+│   └── agent/               # ⛔ 仅占位 README，SPA 已迁 _archive/
 │
 reference/mtrobot-agent-portal/static/   # 萌兔官方 bundle（sync 脚本更新）
 data/admin-seed/                         # 菜单/商品等 seed JSON
@@ -179,7 +179,7 @@ packages/plugin-config/                  # op 解析，bot-server 只读
 
 ### 废弃目录
 
-`public/agent/` 已标记 [`DEPRECATED.md`](../../apps/admin/public/agent/DEPRECATED.md)，**禁止扩展**。
+`public/agent/` 已归档至 [`_archive/deprecated/admin-agent-spa/`](../../_archive/deprecated/admin-agent-spa/DEPRECATED.md)，目录内仅留占位 README。
 
 ---
 
@@ -218,7 +218,7 @@ wechathook B-Admin。先读：
 约束：
 - 总控只改 public/console/ + master/ + providers/
 - 总代不改萌兔 bundle，只改 mengtu-api / mengtu-ui / adaptive
-- 禁止扩展 public/agent/
+- 禁止扩展 `public/agent/`（见 `_archive/deprecated/admin-agent-spa/`）
 - 改完跑 e2e:admin-ui 或 e2e:sign-alignment
 
 交卷：handoff-template.md

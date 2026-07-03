@@ -13,7 +13,9 @@ alwaysApply: false
 | 路径 | 改哪里 | 禁止 |
 |------|--------|------|
 | `/console/` | `public/console/*`、`master/*`、`page-registry.ts` | 动萌兔 bundle |
-| `/agent/` | `mengtu-api.ts`、`mengtu-ui.ts`、`public/mengtu/*` | 动 `public/agent/`、改 `reference/static/js/*.js` |
+| `/agent/` | `mengtu-api.ts`、`mengtu-ui.ts`、`public/mengtu/*` | 动 `public/agent/`（已归档）、改 `reference/static/js/*.js` |
+
+先读 `docs/development/project-layout.md` 与 `_archive/README.md`。
 
 ## 目录
 

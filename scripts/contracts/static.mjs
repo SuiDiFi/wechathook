@@ -38,6 +38,10 @@ check(
   "sign.json archive exists",
 );
 check(
+  fileExists("reference/mtrobot-agent-portal/api-samples/full-sync/Agent/srcGet/menu.json"),
+  "menu.json archive exists",
+);
+check(
   fileExists("reference/mtrobot-agent-portal/static/agent/index.html"),
   "mengtu agent index.html exists",
 );
@@ -78,9 +82,22 @@ check(loader.includes("loadGroupOverride"), "PluginConfigLoader.loadGroupOverrid
 const signEngine = readText("packages/bot-core/src/super/sign-engine.ts");
 check(signEngine.includes("resolveSignConfig"), "SignEngine uses plugin config");
 
+section("bot menu resolution");
+
+const menuEngine = readText("packages/bot-core/src/super/menu-engine.ts");
+check(loader.includes("resolveMenuText"), "PluginConfigLoader.resolveMenuText");
+check(loader.includes("describeMenu"), "PluginConfigLoader.describeMenu");
+check(menuEngine.includes("resolveMenuText"), "MenuEngine uses plugin config");
+
 section("cursor rules");
 
-check(fileExists("apps/admin/public/agent/DEPRECATED.md"), "public/agent DEPRECATED marker");
+check(
+  fileExists("_archive/deprecated/admin-agent-spa/DEPRECATED.md"),
+  "archived admin-agent-spa DEPRECATED marker",
+);
+check(fileExists("apps/admin/public/agent/README.md"), "public/agent stub README");
+check(fileExists("_archive/README.md"), "_archive index");
+check(fileExists("docs/development/project-layout.md"), "project-layout doc");
 
 if (errors) {
   console.error(`\nStatic contracts: ${errors} failure(s)`);

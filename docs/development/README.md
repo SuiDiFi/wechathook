@@ -8,6 +8,7 @@
 |------|------|
 | [**当前状态 CURRENT**](./CURRENT.md) | 多 Agent 集成会话必读：服务、分工、里程碑 |
 | [**集成工作流**](./integration-workflow.md) | Git 分支 + 文档 + 契约测试汇总层 |
+| [**项目目录说明**](./project-layout.md) | 顶层结构、scripts 分类、`_archive` 说明 |
 | [**Admin 双后台架构**](./admin-ui-architecture.md) | 总控/总代目录、UI 复用、B-Admin Agent 规范 |
 | [**接口契约 contracts/**](./contracts/README.md) | admin↔bot、super API、配置优先级 |
 | [架构概览](./architecture.md) | 分层设计、消息流、模块职责 |
