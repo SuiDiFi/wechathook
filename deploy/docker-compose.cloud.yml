@@ -1,0 +1,40 @@
+# 云端生产：bot-server + admin（Ubuntu + Docker Compose）
+# 用法见 docs/development/cloud-deploy-sc5.md
+
+services:
+  bot-server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.bot-server
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8788:8788"
+    environment:
+      BOT_SERVER_PORT: "8788"
+      CONFIG_PATH: config/bot.yaml
+    volumes:
+      - ../config:/app/config:ro
+      - bot-data:/app/data
+      - ../reference:/app/reference:ro
+
+  admin:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.admin
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8790:8790"
+    environment:
+      ADMIN_CONFIG: config/admin.production.yaml
+      BOT_SERVER_URL: http://bot-server:8788
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      MASTER_PASSWORD: ${MASTER_PASSWORD:-}
+    depends_on:
+      - bot-server
+    volumes:
+      - ../config:/app/config
+      - bot-data:/app/data
+      - ../reference:/app/reference:ro
+
+volumes:
+  bot-data:

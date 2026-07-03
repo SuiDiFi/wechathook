@@ -7,6 +7,7 @@ data/*.db-*
 config/certs/**/*.pem
 !config/certs/**/.gitkeep
 data/agent-overrides/
+config/admin.production.yaml
 .DS_Store
 *.tsbuildinfo
 playwright-tmp/

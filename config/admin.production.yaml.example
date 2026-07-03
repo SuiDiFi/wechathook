@@ -1,0 +1,23 @@
+# 云端 admin 配置模板 — 复制到服务器 config/admin.production.yaml 并填写 token
+# 勿将含真实 token 的文件提交 Git
+
+listen:
+  host: "0.0.0.0"
+  port: 8790
+
+# Docker 内网；若 admin 与 bot-server 同 compose，保持此地址
+botServer: "http://bot-server:8788"
+
+configPath: "config/bot.yaml"
+
+auth:
+  token: "CHANGE_ME_STRONG_TOKEN"
+
+master:
+  username: "admin"
+  password: "CHANGE_ME_MASTER_PASSWORD"
+
+login:
+  username: "1000"
+  password: "000000"
+  uid: 1000

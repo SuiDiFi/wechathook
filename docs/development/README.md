@@ -8,7 +8,7 @@
 |------|------|
 | [**当前状态 CURRENT**](./CURRENT.md) | 多 Agent 集成会话必读：服务、分工、里程碑 |
 | [**集成工作流**](./integration-workflow.md) | Git 分支 + 文档 + 契约测试汇总层 |
-| [**接口契约 contracts/**](./contracts/README.md) | admin↔bot、super API、配置优先级 |
+| [**云端部署 sc5.top**](./cloud-deploy-sc5.md) | Ubuntu + Docker + Nginx 上云步骤 |
 | [架构概览](./architecture.md) | 分层设计、消息流、模块职责 |
 | [快速上手](./getting-started.md) | 环境、构建、启动、联调 |
 | [配置参考](./configuration.md) | `bot.yaml` 与按群配置 |
