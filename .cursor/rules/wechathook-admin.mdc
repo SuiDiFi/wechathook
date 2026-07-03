@@ -1,17 +1,46 @@
 ---
-description: B-Admin 窗口 — 萌兔 UI、srcGet/srcPost、plugin-config
-globs: apps/admin/**,packages/plugin-config/**,data/**
+description: B-Admin — 总控/总代 UI 架构、目录与复用规范
+globs: apps/admin/**,packages/plugin-config/**,data/admin-seed/**
 alwaysApply: false
 ---
 
-# B-Admin 边界
+# B-Admin 边界与 UI 规范
 
-**职责：** 萌兔 H5、`/api/Agent/srcGet|srcPost`、overrides 写入、总控 `/console`。
+先读 `docs/development/admin-ui-architecture.md`。
 
-**可改：** `apps/admin/**`、`packages/plugin-config/**`、`data/agent-overrides/**`
+## 双后台
 
-**禁止：** rabbitr、gateway 出站、inject、自建 agent SPA。
+| 路径 | 改哪里 | 禁止 |
+|------|--------|------|
+| `/console/` | `public/console/*`、`master/*`、`page-registry.ts` | 动萌兔 bundle |
+| `/agent/` | `mengtu-api.ts`、`mengtu-ui.ts`、`public/mengtu/*` | 动 `public/agent/`、改 `reference/static/js/*.js` |
 
-**契约：** `docs/development/contracts/admin-bot.md`
+## 目录
 
-**验证：** `pnpm sync:mengtu-static && pnpm --filter @wechathook/admin build && pnpm e2e:sign-alignment`
+- `server.ts` — 只装配，业务放 `master/` 或 `mengtu-api.ts`
+- `providers/local-api.ts` — 已落地数据；`empty-api.ts` — 预览空壳
+- `data/admin-seed/` — 菜单等 seed；overrides → `data/agent-overrides/`（常量见 `@wechathook/plugin-config`）
+
+## 新增功能
+
+1. 定归属：总控 vs 总代 op vs bot 引擎（后者交 A-Cloud）
+2. 总控新页：`page-registry` tier + `master/api` + `console/app.js`
+3. 总代新 op：srcGet/srcPost + `plugin-config` + bot 引擎 + e2e
+
+## UI 复用
+
+- 总控样式：只用 `console.css` 的 `:root` 变量与现有 class
+- 总代布局：只改 `public/mengtu/adaptive.css|js`，递增 `ADAPTIVE_ASSET_VERSION`
+- API：总控走 `/api/master/*`；总代走 `/api/Agent/*`
+
+## 验证
+
+```powershell
+pnpm --filter @wechathook/admin build
+pnpm e2e:admin-ui          # 总控
+pnpm e2e:sign-alignment    # 总代→bot
+```
+
+## 契约
+
+`docs/development/contracts/admin-bot.md`

@@ -13,7 +13,7 @@
 - [x] `docs/development/contracts/` — admin-bot、super-api、config-priority
 - [x] `docs/development/integration-workflow.md` — Git + 文档 + 契约测试
 - [x] `.cursor/rules/wechathook-*.mdc` — 集成 / cloud / admin / local 边界
-- [x] `pnpm contracts` — 静态 + 运行时契约测试
+- [x] Admin 双后台架构文档 + Cursor 规则 + `public/agent/DEPRECATED.md` + 总控 CSS token 表
 
 ---
 

@@ -1,4 +1,12 @@
-/* 官方总控 — 浅橙 + 绿色主题 · PC / H5 自适应 */
+/* 官方总控 — 浅橙 + 绿色主题 · PC / H5 自适应
+ *
+ * ═══ Design Tokens（新增样式请优先用变量，见 admin-ui-architecture.md §总控 CSS）═══
+ * 颜色: --primary --primary-dark --primary-light --accent --accent-dark --accent-light
+ *       --ok --bad --text --text-secondary --border --bg --card
+ *       --surface-muted --border-muted
+ * 布局: --radius --radius-sm --shadow --shadow-hover --sidebar-w --header-h
+ * 组件: .card .cell .stat-card .mod-card .btn-primary .btn-block .switch .toast
+ */
 :root {
   --primary: #ff9f43;
   --primary-dark: #e8590c;
@@ -8,11 +16,16 @@
   --accent-light: #ebfbee;
   --ok: #40c057;
   --bad: #fa5252;
+  --warn: #e67700;
+  --warn-bg: #fff4e6;
   --text: #2f3542;
   --text-secondary: #868e96;
   --border: #ffe8cc;
+  --border-muted: #eeeeee;
   --bg: #fffbf5;
   --card: #ffffff;
+  --surface-muted: #f8f9fa;
+  --surface-disabled: #f1f3f5;
   --radius: 14px;
   --radius-sm: 10px;
   --shadow: 0 2px 12px rgba(255, 159, 67, 0.08);
@@ -451,9 +464,9 @@ body {
   line-height: 1.4;
   padding: 6px 12px;
   border-radius: 8px;
-  background: #f8f9fa;
+  background: var(--surface-muted);
   color: var(--text-secondary);
-  border: 1px solid #eee;
+  border: 1px solid var(--border-muted);
 }
 
 .mod-card--agent.mod-card--orange .agent-mod-chip {
@@ -767,7 +780,7 @@ body {
 }
 
 .group-tag.ok { color: var(--accent-dark); background: var(--accent-light); }
-.group-tag.warn { color: #e67700; background: #fff4e6; }
+.group-tag.warn { color: var(--warn); background: var(--warn-bg); }
 .group-tag.bad { color: var(--bad); background: #fff5f5; }
 
 .group-card__tags {

@@ -54,6 +54,7 @@ section("integration docs");
 for (const f of [
   "docs/development/CURRENT.md",
   "docs/development/integration-workflow.md",
+  "docs/development/admin-ui-architecture.md",
   "docs/development/contracts/README.md",
   "docs/development/contracts/admin-bot.md",
   "docs/development/contracts/super-api.md",
@@ -79,7 +80,7 @@ check(signEngine.includes("resolveSignConfig"), "SignEngine uses plugin config")
 
 section("cursor rules");
 
-check(fileExists(".cursor/rules/wechathook-integration.mdc"), "integration cursor rule");
+check(fileExists("apps/admin/public/agent/DEPRECATED.md"), "public/agent DEPRECATED marker");
 
 if (errors) {
   console.error(`\nStatic contracts: ${errors} failure(s)`);
