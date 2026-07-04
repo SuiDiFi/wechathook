@@ -4,7 +4,7 @@
 # 规范：docs/development/domain-convention.md
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/SuiDiFi/wechathook.git}"
+REPO_URL="${REPO_URL:-https://gitee.com/airuan/wechathook.git}"
 APP_DIR="${APP_DIR:-/opt/wechathook}"
 DOMAIN_BOT="${DOMAIN_BOT:-bot.sc5.top}"
 DOMAIN_ADMIN="${DOMAIN_ADMIN:-admin.sc5.top}"

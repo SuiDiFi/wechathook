@@ -1,6 +1,7 @@
-# 本地 → GitHub → 服务器 更新清单
+# 本地 → GitHub + Gitee → 服务器 更新清单
 
-> 给不熟悉命令行的同学：日常只需让 Cursor Agent 按本文执行；自己操作时按下面步骤复制即可。
+> 给不熟悉命令行的同学：日常只需让 Cursor Agent 按本文执行；自己操作时按下面步骤复制即可。  
+> **国内腾讯云服务器**请从 **Gitee** 拉代码（已验证可用）；GitHub 作备份/协作主仓。
 
 ---
 
@@ -8,7 +9,7 @@
 
 ```
 按 docs/development/deploy-checklist.md 执行完整部署：
-本地已改完 → push GitHub → 服务器 pull → 重建 Docker → 验证 health
+本地已改完 → push GitHub + Gitee → 服务器从 Gitee pull → 重建 Docker → 验证 health
 ```
 
 ---
@@ -33,15 +34,27 @@ pnpm contracts
 pnpm e2e:mvp
 ```
 
-### 3. 提交并推到 GitHub
+### 3. 提交并推到 GitHub + Gitee
 
 ```powershell
 git add -A
 git commit -m "你的提交说明"
 git push origin master
+git push gitee master
 ```
 
-> 若 push 失败（要登录）：在 GitHub 网页生成 Personal Access Token，或用 GitHub Desktop 推送。
+| 远程 | 地址 | 用途 |
+|------|------|------|
+| `origin` | https://github.com/SuiDiFi/wechathook | 主仓 / 协作 |
+| `gitee` | https://gitee.com/airuan/wechathook | **国内服务器拉取** |
+
+本地若还没有 `gitee` 远程，执行一次：
+
+```powershell
+git remote add gitee https://gitee.com/airuan/wechathook.git
+```
+
+> 若 push 失败（要登录）：GitHub 用 Personal Access Token；Gitee 用「私人令牌」或已配置的 SSH 密钥。
 
 ---
 
@@ -51,14 +64,17 @@ git push origin master
 ssh ubuntu@118.25.42.248
 ```
 
-### 1. 拉最新代码
+### 1. 拉最新代码（从 Gitee）
 
 ```bash
 cd /opt/wechathook
 git pull origin master
 ```
 
-> **若 `git pull` 连不上 GitHub**（国内服务器常见）：让 Cursor 用 **Git bundle** 从本地上传（见下文「八、服务器拉不到 GitHub 时」）。
+服务器 `origin` 已指向 Gitee：`https://gitee.com/airuan/wechathook.git`  
+（国内腾讯云 **可以** 正常拉 Gitee；GitHub 443 常超时，勿再依赖。）
+
+> 若仓库改为 **私有**：在 Gitee 仓库 → 管理 → 部署公钥，把服务器 `~/.ssh/id_rsa.pub` 加为只读公钥，并把 remote 改为 `git@gitee.com:airuan/wechathook.git`。
 
 ### 2. Nginx 配置有变时（改了 `deploy/nginx/wechathook.conf` 才需要）
 
@@ -107,8 +123,8 @@ pnpm e2e:cloud
 
 ## 五、什么改动需要哪几步
 
-| 改了什么 | 本地 push | 服务器 git pull | docker rebuild | nginx reload |
-|----------|-----------|-----------------|----------------|--------------|
+| 改了什么 | 本地 push 双远程 | 服务器 git pull | docker rebuild | nginx reload |
+|----------|------------------|-----------------|----------------|--------------|
 | 仅文档 | ✅ | 可选 | ❌ | ❌ |
 | `adaptive.css/js`、`mengtu-ui.ts` | ✅ | ✅ | ✅ admin | ❌ |
 | `apps/admin` 其它 TS | ✅ | ✅ | ✅ admin | ❌ |
@@ -136,7 +152,7 @@ git reset --hard <commit-id>
 git push origin master   # 仅当确定要让远程也回滚（慎用）
 ```
 
-**服务器跟 GitHub 对齐：**
+**服务器跟 Gitee 对齐：**
 
 ```bash
 cd /opt/wechathook
@@ -147,7 +163,7 @@ docker compose -f deploy/docker-compose.cloud.yml up -d --build
 
 ---
 
-## 八、服务器拉不到 GitHub 时（bundle 同步）
+## 八、备用：服务器连 GitHub / Gitee 都失败时（bundle 同步）
 
 **本地 Windows（Cursor 可代劳）：**
 
@@ -169,11 +185,24 @@ docker compose -f deploy/docker-compose.cloud.yml up -d --build
 
 ---
 
-## 九、仓库与路径速查
+## 九、Gitee 镜像（国内服务器推荐）
+
+| 项 | 值 |
+|----|-----|
+| Gitee | https://gitee.com/airuan/wechathook |
+| 服务器 `origin` | `https://gitee.com/airuan/wechathook.git` |
+| 同步方式 | 本地 `git push gitee master`（与 GitHub 同内容） |
+
+**你只需保证：** 每次本地 commit 后 **两个远程都 push**；服务器上执行 `git pull` 即可。
+
+---
+
+## 十、仓库与路径速查
 
 | 项 | 值 |
 |----|-----|
 | GitHub | https://github.com/SuiDiFi/wechathook |
+| Gitee（国内拉取） | https://gitee.com/airuan/wechathook |
 | 服务器目录 | `/opt/wechathook` |
 | Compose 文件 | `deploy/docker-compose.cloud.yml` |
 | 域名规范 | [domain-convention.md](./domain-convention.md) |
